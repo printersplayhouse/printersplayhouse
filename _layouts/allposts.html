@@ -26,6 +26,28 @@
         </div> 
       </div>
 
+      <section id="two" class="tiles grid">
+        {% for post in site.posts %}
+        {% capture now %}
+          {{'now' | date: '%s' | plus: 0 %}}
+        {% endcapture %}
+        {% capture date %}
+          {{post.date | date: '%s' | plus: 0 %}}
+        {% endcapture %}
+        {% if date > now %}
+        <article>
+          <span class="image">
+            <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
+          </span>
+          <header>
+            <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
+            <p>{{ post.date | date_to_long_string: "ordinal" }}</p>
+          </header>
+        </article>
+        {% endif %}
+        {% endfor %}
+      </section>
+
 <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
 <script>
@@ -50,28 +72,6 @@
     color: #fff;
   }
 </style>
-
-      <section id="two" class="tiles">
-        {% for post in site.posts %}
-        {% capture now %}
-          {{'now' | date: '%s' | plus: 0 %}}
-        {% endcapture %}
-        {% capture date %}
-          {{post.date | date: '%s' | plus: 0 %}}
-        {% endcapture %}
-        {% if date > now %}
-        <article>
-          <span class="image">
-            <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
-          </span>
-          <header>
-            <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-            <p>{{ post.date | date_to_long_string: "ordinal" }}</p>
-          </header>
-        </article>
-        {% endif %}
-        {% endfor %}
-      </section>
 
     </div>
 
