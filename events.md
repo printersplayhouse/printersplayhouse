@@ -1,6 +1,6 @@
 ---
 layout: allposts
-title: Events
+title: events
 landing-title: 'Events'
 nav-menu: false
 description: View all upcoming events at Printers Playhouse
