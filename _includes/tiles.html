@@ -7,7 +7,7 @@
     </span>
     <header>
       <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <h4>{{ post.date | date_to_long_string: "ordinal" }}</h4>
+      <p>{{ post.date | date_to_long_string: "ordinal" }}</p>
     </header>
   </article>
   {% endif %}
