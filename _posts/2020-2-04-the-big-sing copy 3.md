@@ -5,6 +5,7 @@ description: example description
 category: music
 featured: true
 archived: false
+date: 2020-03-04 00:00:00
 address: The Grove Theatre, Eastbourne Library, Grove Road, Eastbourne
 ---
 

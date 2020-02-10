@@ -1,8 +1,8 @@
 ---
 layout: post
-title: music 4
+title: feature 1
 description: example description
-categories: [music, featured]
+categories: featured
 featured: true
 archived: false
 date: 2020-03-01 00:00:00

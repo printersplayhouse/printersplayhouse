@@ -2,10 +2,10 @@
 layout: post
 title: music 1
 description: example description
-categories: [music, featured]
+categories: music
 featured: true
 archived: false
-date: 2020-03-01 00:00:00
+date: 2020-03-02 00:00:00
 address: Printers Playhouse, 44 Grove Road, Eastbourne
 ---
 

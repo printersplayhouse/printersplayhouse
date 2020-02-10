@@ -1,10 +1,11 @@
 ---
 layout: post
-title: theatre 2
+title: hidden 1
 description: example description
 category: theatre
 featured: false
 archived: false
+date: 2020-02-01 00:00:00
 address: The Grove Theatre, Eastbourne Library, Grove Road, Eastbourne
 ---
 
