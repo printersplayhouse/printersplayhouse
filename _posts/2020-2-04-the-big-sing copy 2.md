@@ -6,6 +6,7 @@ category: music featured
 featured: true
 archived: false
 live-date: 21 February
+date: 2020-03-01 00:00:00
 address: The Grove Theatre, Eastbourne Library, Grove Road, Eastbourne
 ---
 
