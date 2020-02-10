@@ -30,13 +30,14 @@
 	</div>
 </section>
 
-
+{% for cat in page.category %}
 <div class="innersmall">
 	<h3 style="text-transform: capitalize;">More {{ page.category }}</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.posts limit:3 %}
-  {% if site.tiles-source == 'posts' and post.show_tile != false and post.title != page.title and post.category = page.category %}
+  {% if post.title != page.title %}
+  {% for post in site.categories[cat] limit:2 and post.title != page.title %}
+  {% if site.tiles-source == 'posts' and post.show_tile != false %}
   <article>
     <span class="image">
       <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
@@ -48,8 +49,9 @@
   </article>
   {% endif %}
   {% endfor %}
+  {% endif %}
 </section>
-
+{% endfor %}
 
 </div>
 
