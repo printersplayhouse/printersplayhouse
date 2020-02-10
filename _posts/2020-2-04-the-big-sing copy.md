@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Poetry Night
-live-date: 7:45pm, 21 February 2020
+description: example description
+live-date: 21 February
 address: The Grove Theatre, Eastbourne Library, Grove Road, Eastbourne
 ---
 

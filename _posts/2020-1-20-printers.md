@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Printers Playhouse
-live-date: 9pm, 21 March 2020
+description: example description
+category: theatre
+live-date: 21 March
 address: Printers Playhouse, 44 Grove Road, Eastbourne
 ---
 
