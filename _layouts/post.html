@@ -31,12 +31,13 @@
 </section>
 
 {% for cat in page.category %}
+
 <div class="innersmall">
-	<h3 style="text-transform: capitalize;">More {{ page.category }}</h3>
+	<h3 style="text-transform: capitalize;">Latest {{ page.category }}</h3>
 </div>
 <section id="two" class="tiles">
-  {% if post.title != page.title %}
-  {% for post in site.categories[cat] limit:2 and post.title != page.title %}
+  {% for post in site.categories[cat] limit:3 %}
+  {% if post.url != page.url %}
   {% if site.tiles-source == 'posts' and post.show_tile != false %}
   <article>
     <span class="image">
@@ -48,8 +49,8 @@
     </header>
   </article>
   {% endif %}
-  {% endfor %}
   {% endif %}
+  {% endfor %}
 </section>
 {% endfor %}
 
