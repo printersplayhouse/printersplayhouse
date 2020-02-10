@@ -1,8 +1,8 @@
 ---
 layout: post
-title: theatre 2
+title: music 2
 description: example description
-category: theatre
+category: music
 live-date: 21 February
 address: The Grove Theatre, Eastbourne Library, Grove Road, Eastbourne
 ---

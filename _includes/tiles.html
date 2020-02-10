@@ -1,19 +1,19 @@
 <section id="one" class="tiles">
   {% for post in site.posts limit:site.tiles-count %}
-  {% if site.tiles-source == 'posts' and post.show_tile != false and post.category == 'theatre' %}
+  {% if site.tiles-source == 'posts' and post.show_tile != false %}
   <article>
     <span class="image">
       <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
     </span>
     <header>
       <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <h4>{{ post.live-date }}</h4>
+      <h4>{{ post.category }}, {{ post.live-date }}</h4>
     </header>
   </article>
   {% endif %}
   {% endfor %}
   {% for page in site.html_pages %}
-  {% if site.tiles-source == 'pages' and page.show_tile != false and page.category == 'theatre' %}
+  {% if site.tiles-source == 'pages' and page.show_tile != false %}
   <article>
     <span class="image">
       <img src="{{ page.image }}" alt="{{ page.image-alt }}" />

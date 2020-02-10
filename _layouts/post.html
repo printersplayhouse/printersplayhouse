@@ -26,8 +26,30 @@
 		<h3>{{ page.description }}</h3>
 		<p>{{ page.address }}</p>
 		<p>{{ content }}</p>
+		
 	</div>
 </section>
+
+
+<div class="innersmall">
+	<h3 style="text-transform: capitalize;">More {{ page.category }}</h3>
+</div>
+<section id="two" class="tiles">
+  {% for post in site.posts limit:3 %}
+  {% if site.tiles-source == 'posts' and post.show_tile != false and post.title != page.title and post.category = page.category %}
+  <article>
+    <span class="image">
+      <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
+    </span>
+    <header>
+      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
+      <h4>{{ post.live-date }}</h4>
+    </header>
+  </article>
+  {% endif %}
+  {% endfor %}
+</section>
+
 
 </div>
 

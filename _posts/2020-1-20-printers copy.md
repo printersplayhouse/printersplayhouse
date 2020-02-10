@@ -1,7 +1,8 @@
 ---
 layout: post
-title: A Play
+title: music 1
 description: example description
+category: music
 live-date: 21 March
 address: Printers Playhouse, 44 Grove Road, Eastbourne
 ---

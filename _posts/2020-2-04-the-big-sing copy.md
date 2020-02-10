@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Poetry Night
+title: theatre 1
 description: example description
+category: theatre
 live-date: 21 February
 address: The Grove Theatre, Eastbourne Library, Grove Road, Eastbourne
 ---

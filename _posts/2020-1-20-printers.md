@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Printers Playhouse
+title: theatre 3
 description: example description
-category: theatre
+category: theatre 
 live-date: 21 March
 address: Printers Playhouse, 44 Grove Road, Eastbourne
 ---
