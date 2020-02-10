@@ -15,33 +15,33 @@
     
     <!-- Main -->
     <div id="main" class="alt">
+      <div class="inner">
+        <h1>What's On</h1>
 
-      <!-- One -->
-      <section id="one">
-      	<div class="inner">
-          <div class="box">
-            <h1>Upcoming Gigs</h1>
-            {% for post in site.posts %}
-        	  {% if post.title != 404 %}
-        	  <header class="major">
-        	    <h2>{{ post.title }}</h2>
-              {% if post.live-date %}<p>Date: <strong>{{ post.live-date }}</strong></p>{% endif %}
-              {% if post.address %}<p>Venue: <strong>{{ post.address }}</strong></p>{% endif %}
-        	  </header>
-        	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-        	  {% if post.description %}<h3>{{ post.description }}</h3>{% endif %}
-            <p>{{ post.content }}</p>
-        	  {% endif %}
-            {% endfor %}
-        	</div>
-          <div class="box">
-            <h3>Now booking gigs for Summer/Autumn 2020</h3>
-            <ul class="actions vertical">
-              <li><a href="../book" class="button next scrolly">Book the band</a></li>
-              <!-- <li><a href="#" class="button fit">Log In</a></li> -->
-            </ul>
-          </div>
-        </div>
+
+    <!-- post content here -->
+  
+      </div>
+      <section id="two" class="tiles">
+        {% for post in site.posts %}
+        {% capture now %}
+          {{'now' | date: '%s' | plus: 0 %}}
+        {% endcapture %}
+        {% capture date %}
+          {{post.date | date: '%s' | plus: 0 %}}
+        {% endcapture %}
+        {% if date > now %}
+        <article>
+          <span class="image">
+            <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
+          </span>
+          <header>
+            <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
+            <h4>{{ post.live-date }}</h4>
+          </header>
+        </article>
+        {% endif %}
+        {% endfor %}
       </section>
 
     </div>
