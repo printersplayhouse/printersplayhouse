@@ -2,7 +2,7 @@
 title: Printers Playhouse | Theatre, music and comedy in East Sussex
 header: Printers Playhouse
 subtitle: Theatre, music and comedy in East Sussex
-email: band@thegreatfire.co.uk
+email: 
 description:  Printers Playhouse opened its doors in June 2015 as a brand new theatre, music venue and workshop space in central Eastbourne. Offering a wide artistic programme of productions, workshops, actor training and music, this Eastbourne Community Arts Hub offers a safe space for local artists and musicians to share, collaborate, learn and develop new skills.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site
@@ -21,11 +21,11 @@ tiles-count: 4
 
 # social settings
 500px_url:
-facebook_url: https://www.facebook.com/The-Great-Fire-109788457226542
+facebook_url:
 github_url:
 gitlab_url: 
 googleplus_url: 
-instagram_url: https://facebook.com/greatfireband
+instagram_url: 
 linkedin_url: 
 pinterest_url:
 slack_url:
@@ -38,6 +38,6 @@ sass:
   style: compressed
 
 # sitemap
-url: "https://thegreatfire.co.uk" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
