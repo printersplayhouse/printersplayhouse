@@ -19,17 +19,32 @@
         <h1>What's On</h1>
         <p>All upcoming events</p>
         <div class="button-group filter-button-group">
+          <a class="button active" data-filter="*">All</a>
           {% for category in site.categories %}
             <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
           {% endfor %}
-            <a class="button active" data-filter="*">All</a>
         </div> 
 
     <!-- post content here -->
-      
+      <div class="grid">
+        {% for post in site.posts %}
+           <div class="element-item {{ post.category }} box">
+              <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
+              <header class="major">
+                <h2>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </header>
+              <p>
+                {{ post.excerpt }}
+              </p>
+           </div>
+          {% endfor %}
+      </div>
       </div>
 
-      <div class="grid">      
+<!--       <div class="grid">      
         <section id="two" class="tiles">
           {% for post in site.posts %}
           {% capture now %}
@@ -51,7 +66,7 @@
           {% endif %}
           {% endfor %}
         </section>
-      </div>
+      </div> -->
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
