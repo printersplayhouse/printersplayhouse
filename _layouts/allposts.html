@@ -18,7 +18,12 @@
       <div class="inner">
         <h1>What's On</h1>
         <p>All upcoming events</p>
-
+        <div class="button-group filter-button-group">
+          {% for category in site.categories %}
+            <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
+          {% endfor %}
+            <a class="button active" data-filter="*">All</a>
+        </div> 
 
     <!-- post content here -->
   

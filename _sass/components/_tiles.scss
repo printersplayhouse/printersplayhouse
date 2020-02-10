@@ -6,6 +6,9 @@
 
 /* Tiles */
 
+	.grid-item { width: 25%; }
+	.grid-item--width2 { width: 50%; }
+
 	.tiles {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
