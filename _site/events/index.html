@@ -116,21 +116,17 @@
     <div id="main" class="alt">
       <div class="inner">
         <h1>What's On</h1>
-        <p>All upcoming events</p>
         <div class="button-group filter-button-group">
+          <h3 style="display: inline-block; width: auto; margin: 0 1em 0 0">Filters</h3>
           <a class="button active" data-filter="*">All</a>
           
             <a class="button" data-filter=".theatre">theatre</a>
           
         </div> 
-        <div class="button-group filter-button-group">
-            <h3>Dates</h3>
-            <a class="button" data-filter=".">10</a>
-            <a class="button" data-filter=".">11</a>
-            <a class="button" data-filter=".">12</a>
-            <a class="button" data-filter=".">13</a>
-            <a class="button" data-filter=".">14</a>
-        </div> 
+        <!-- <div class="button-group filter-button-group">
+            <h3 style="display: inline-block; width: auto; margin: 0 1em 0 0">Dates</h3>
+            <a class="button" data-filter=".">February</a>
+        </div>  -->
 
     <!-- post content here -->
       <div class="grid">
@@ -158,6 +154,7 @@
   // init Isotope
   var $grid = $('.grid').isotope({
     // options
+    
   });
   // filter items on button click
   $('.filter-button-group').on( 'click', 'a', function() {
