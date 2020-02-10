@@ -5,7 +5,6 @@ description: example description
 category: music
 featured: true
 archived: false
-live-date: 21 February
 address: The Grove Theatre, Eastbourne Library, Grove Road, Eastbourne
 ---
 
