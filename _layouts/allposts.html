@@ -32,13 +32,6 @@
     <!-- post content here -->
       <div class="grid">
         {% for post in site.posts reversed %}
-        {% capture now %}
-            {{'now' | date: '%s' | plus: 0 %}}
-          {% endcapture %}
-          {% capture date %}
-            {{post.date | date: '%s' | plus: 0 %}}
-          {% endcapture %}
-          {% if date > now %}
            <div class="element-item {{ post.category }} box">
               <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
               <header class="major">
