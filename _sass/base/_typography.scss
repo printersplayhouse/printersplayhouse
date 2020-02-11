@@ -60,7 +60,6 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
 		line-height: 1.65;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -72,18 +71,22 @@
 	}
 
 	h1 {
+		color: _palette(accent1);
 		font-size: 2.5em;
 	}
 
 	h2 {
+		color: _palette(accent3);
 		font-size: 1.75em;
 	}
 
 	h3 {
+		color: _palette(accent3);
 		font-size: 1.35em;
 	}
 
 	h4 {
+		color: _palette(accent3);
 		font-size: 1.1em;
 	}
 
