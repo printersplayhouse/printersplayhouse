@@ -21,7 +21,7 @@ tiles-count: 4
 
 # social settings
 500px_url:
-facebook_url:
+facebook_url: https://www.facebook.com/PrintersPlayhouse/
 github_url:
 gitlab_url: 
 googleplus_url: 
@@ -29,7 +29,7 @@ instagram_url:
 linkedin_url: 
 pinterest_url:
 slack_url:
-twitter_url: 
+twitter_url: https://twitter.com/printersplayh?lang=en
 
 # build settings
 markdown: kramdown
