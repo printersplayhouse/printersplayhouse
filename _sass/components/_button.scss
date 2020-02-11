@@ -125,7 +125,7 @@
 			}
 
 			&:active {
-				background-color: desaturate(darken(_palette(highlight), 15), 5);
+				background-color: desaturate(darken(_palette(fg), 15), 5);
 			}
 		}
 
