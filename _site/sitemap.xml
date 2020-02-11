@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/the-big-sing/</loc>
+<loc>http://localhost:4000/printersplayhouse/the-big-sing/</loc>
 <lastmod>2020-02-01T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/404/</loc>
+<loc>http://localhost:4000/printersplayhouse/404/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/about_us/</loc>
+<loc>http://localhost:4000/printersplayhouse/about_us/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/events/</loc>
+<loc>http://localhost:4000/printersplayhouse/events/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://localhost:4000/printersplayhouse/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/theatre/</loc>
+<loc>http://localhost:4000/printersplayhouse/theatre/</loc>
 </url>
 </urlset>
