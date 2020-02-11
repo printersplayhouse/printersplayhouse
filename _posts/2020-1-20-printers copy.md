@@ -2,7 +2,7 @@
 layout: post
 title: music 1
 description: example description
-categories: music
+categories: featured
 featured: true
 archived: false
 date: 2020-03-02 00:00:00
