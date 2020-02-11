@@ -32,20 +32,20 @@
     <!-- post content here -->
       <div class="grid">
         {% for post in site.posts reversed %}
-<!--         {% capture now %}
+        {% capture now %}
             {{'now' | date: '%s' | plus: 0 %}}
           {% endcapture %}
           {% capture date %}
             {{post.date | date: '%s' | plus: 0 %}}
           {% endcapture %}
-          {% if date > now %} -->
+          {% if date > now %}
            <div class="element-item {{ post.category }} box">
               <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
               <header class="major">
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
                 </h2>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
               </header>
               <p>
                 {{ post.excerpt }}
