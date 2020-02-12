@@ -5,7 +5,7 @@ subtitle: Theatre, music and comedy in East Sussex
 email: info@printersplayhouse.co.uk
 description:  Printers Playhouse opened its doors in June 2015 as a brand new theatre, music venue and workshop space in central Eastbourne. Offering a wide artistic programme of productions, workshops, actor training and music, this Eastbourne Community Arts Hub offers a safe space for local artists and musicians to share, collaborate, learn and develop new skills.
 baseurl: "/printersplayhouse" # the subpath of your site, e.g. /blog
-url: https://printersplayhouse.github.io/printersplayhouse # the base hostname & protocol for your site
+url: # the base hostname & protocol for your site
 author:
 street_address: 49A Grove Rd
 city: Eastbourne 
