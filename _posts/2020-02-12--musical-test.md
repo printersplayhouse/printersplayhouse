@@ -1,6 +1,6 @@
 ---
 layout: post
-title: musical
+title: Open Stage
 description: example description
 categories: open stage
 featured: true

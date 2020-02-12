@@ -39,7 +39,7 @@
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date > now %}
           <div class="element-item {{ post.category }} box">
-            {% if post.catgeory == 'open stage' %}
+            {% if post.title == 'Open Stage' %}
             <span class="image left" style="width:33%"><img src="../assets/images/default--open-stage.jpg"/></span>
             {% else% }
             <span class="image left" style="width:33%"><img src="../{{ post.image }}"/></span>
