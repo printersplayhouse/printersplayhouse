@@ -30,26 +30,26 @@
         </div>  -->
 
     <!-- post content here -->
-      <div class="grid">
+        <div class="grid">
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% for post in site.posts reversed %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date > now %}
-           <div class="element-item {{ post.category }} box">
-              <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
+          <div class="element-item {{ post.category }} box">
+            <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
               <header class="major">
                 <h3 style="text-decoration: capitalize;">
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h3>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              </header>
-              <p>
-                {{ post.excerpt }}
-              </p>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </header>
+            <p>
+              {{ post.excerpt }}
+            </p>
            </div>
           {% endif %}
           {% endfor %}
-      </div>
+        </div>
       </div>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
