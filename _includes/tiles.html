@@ -1,6 +1,6 @@
 <section id="one" class="tiles">
   {% for post in site.categories.featured limit:site.tiles-count %}
-  {% if site.tiles-source == 'posts' and post.archived != true %}
+  {% if site.tiles-source == 'posts' and post.archived != true and post.featured == true %}
   <article>
     <span class="image">
       <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
