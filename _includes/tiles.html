@@ -1,5 +1,5 @@
 <section id="one" class="tiles">
-  {% for post in site.categories.featured limit:site.tiles-count %}
+  {% for post in site.posts limit:site.tiles-count %}
   {% if site.tiles-source == 'posts' and post.archived != true and post.featured == true %}
   <article>
     <span class="image">
