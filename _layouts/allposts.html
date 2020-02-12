@@ -38,9 +38,9 @@
           <div class="element-item {{ post.category }} box">
             <span class="image left" style="width:33%"><img src="
               {% if post.catgeory == 'open stage' %}
-              /assets/images/default--open-stage.jpg
+              ../assets/images/default--open-stage.jpg
               {% else% }
-              {{ post.image }}
+              ../{{ post.image }}
               {% endif %}
               "/></span>
               <header class="major">
