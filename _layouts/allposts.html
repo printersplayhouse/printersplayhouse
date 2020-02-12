@@ -38,9 +38,9 @@
            <div class="element-item {{ post.category }} box">
               <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
               <header class="major">
-                <h3>
-                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}: </span>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="text-decoration: capitalize;">{{ post.title }}</a>
+                <h3 style="text-decoration: capitalize;">
+                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span><br />
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h3>
               </header>
               <p>

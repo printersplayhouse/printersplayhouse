@@ -2,7 +2,7 @@
 layout: post
 title: theatre 1
 description: example description
-category: theatre
+category: music
 featured: true
 archived: false
 date: 2020-03-05 00:00:00
