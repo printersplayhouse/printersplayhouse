@@ -2,7 +2,7 @@
 layout: post
 title: musical
 description: example description
-categories: theatre
+categories: 'open stage'
 featured: true
 archived: false
 date: 2020-03-01 00:00:00
