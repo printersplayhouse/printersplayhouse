@@ -2,7 +2,7 @@
 layout: post
 title: Open Stage
 description: example description
-categories: Music
+categories: music
 featured: true
 archived: false
 date: 2020-03-01 00:00:00
