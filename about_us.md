@@ -12,7 +12,7 @@ nav-menu: true
 
 
 <!-- Intro -->
-<section id="intro" class="spotlights" style="margin-top:8em;">
+<section id="intro" class="spotlights" style="margin-top:4em;">
 	<div class="inner">
 		<h2>Printers Playhouse</h2>
 		<p>Printers Playhouse opened its doors in June 2015 as a brand new theatre, music venue and workshop space in central Eastbourne. Offering a wide artistic programme of productions, workshops, actor training and music, this Eastbourne Community Arts Hub offers a safe space for local artists and musicians to share, collaborate, learn and develop new skills.</p>
