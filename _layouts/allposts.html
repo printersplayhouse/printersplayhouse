@@ -39,9 +39,9 @@
             <span class="image left" style="width:33%"><img src="
               {% if post.catgeory == 'open stage' %}
               /assets/images/default--open-stage.jpg
-              {{else}}
+              {% else% }
               {{ post.image }}
-              {{/if}}
+              {% endif %}
               "/></span>
               <header class="major">
                 <h3 style="text-decoration: capitalize;">
