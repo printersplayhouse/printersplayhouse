@@ -36,7 +36,13 @@
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date > now %}
           <div class="element-item {{ post.category }} box">
-            <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
+            <span class="image left" style="width:33%"><img src="
+              {% if post.catgeory == 'open stage' %}
+              /assets/images/default--open-stage.jpg
+              {{else}}
+              {{ post.image }}
+              {{/if}}
+              "/></span>
               <header class="major">
                 <h3 style="text-decoration: capitalize;">
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
