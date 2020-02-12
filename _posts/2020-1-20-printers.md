@@ -1,8 +1,8 @@
 ---
 layout: post
-title: feature 1
+title: musical
 description: example description
-categories: featured
+categories: theatre
 featured: true
 archived: false
 date: 2020-03-01 00:00:00

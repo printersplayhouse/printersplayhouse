@@ -1,6 +1,6 @@
 ---
 layout: post
-title: music 2
+title: more music
 description: example description
 category: music
 featured: true
