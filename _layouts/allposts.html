@@ -41,7 +41,7 @@
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
               <p>{{ post.excerpt }}</p>
               <ul class="actions">
-                <li><a href="{{ post.url | prepend: site.baseurl }}" class="button scrolly special">{% if post.ticketlink != null %}Book Tickets{% else %}View More{% endif %}</a></li>
+                <li><a href="{{ post.url | prepend: site.baseurl }}" class="button scrolly special">{% if post.ticketlink %}Book Tickets{% else %}View More{% endif %}</a></li>
               </ul>
             </header>
            </div>
