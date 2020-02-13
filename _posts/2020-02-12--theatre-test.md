@@ -3,7 +3,7 @@ layout: post
 title: Open Stage
 description: example description
 category: theatre
-featured: true
+featured: false
 archived: false
 date: 2020-03-01 00:00:00
 address: Printers Playhouse, 44 Grove Road, Eastbourne
