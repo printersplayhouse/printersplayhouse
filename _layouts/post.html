@@ -26,17 +26,14 @@
 		<h3>{{ page.description }}</h3>
 		<p>{{ page.address }}</p>
 		<p>{{ content }}</p>
-		
+		{% if post.ticketlink %}
+    <div class="box">
+      <a href="post.ticketlink" target="_blank">Get Tickets</a>
+      <p stlye="font-size:0.8em;">You will be redirected to our ticket partner</p>
+    </div>
+    {% endif %}
 	</div>
 </section>
-
-{% if post.ticketlink %}
-<div class="box">
-  <a href="post.ticketlink" target="_blank">Get Tickets</a>
-  <p stlye="font-size:0.8em;">You will be redirected to our ticket partner</p>
-</div>
-{% endif %}
-
 
 <div class="innersmall">
 	<h3 style="text-transform: capitalize;">Featured Events</h3>
