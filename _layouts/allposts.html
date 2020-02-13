@@ -23,7 +23,7 @@
         <h3 style="display: inline-block; width: auto; margin: 0 1em 0 0">Filters</h3>
         <div class="button-group filter-button-group">
           <a class="button active" data-filter="*">All</a>
-          {% for category in site.category %}
+          {% for category in site.categories %}
             <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
           {% endfor %}
         </div> 
