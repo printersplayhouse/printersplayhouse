@@ -2,7 +2,7 @@
 layout: post
 title: Open Stage
 description: example description
-image: assets/images/default--open-stage
+image: 'assets/images/default--open-stage.jpg'
 category: music
 featured: false
 archived: false
