@@ -7,7 +7,7 @@ category: theatre
 featured: false
 archived: false
 date: 2020-03-01 00:00:00
-address: Printers Playhouse, 44 Grove Road, Eastbourne
+venue: Printers Playhouse, 44 Grove Road, Eastbourne
 ticketlink: https://www.johnhayn.es
 ---
 
