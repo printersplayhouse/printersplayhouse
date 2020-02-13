@@ -1,6 +1,8 @@
 <section id="one" class="tiles">
   {% for post in site.posts limit:site.tiles-count %}
-  {% if site.tiles-source == 'posts' and post.archived != true and post.featured == true %}
+  {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% if date > now and site.tiles-source == 'posts' and post.archived != true and post.featured == true %}
   <article>
     <span class="image">
       <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
