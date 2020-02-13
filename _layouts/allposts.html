@@ -33,7 +33,7 @@
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date > now %}
           <div class="element-item {{ post.category }} box">
-            <span class="image left" style="width:33%"><img src="{{ post.image }}"/></span>
+            <span class="image left" style="height:100%; max-width: 33%"><img src="{{ post.image }}"/></span>
             <header class="right">
               <h3 style="text-decoration: capitalize;">
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
