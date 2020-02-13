@@ -28,7 +28,11 @@
 		<p>{{ content }}</p>
 		{% if page.ticketlink %}
     <div class="box">
-      <a href="post.ticketlink" target="_blank">Get Tickets</a>
+      <h3>Get Tickets</h3>
+      <p>Don't miss out, book tickets now</p>
+      <ul class="actions">
+      <li><a href="{{ post.url | prepend: site.baseurl }}" class="button scrolly special">Book Now</a></li>
+      </ul>
       <p stlye="font-size:0.8em;">You will be redirected to our ticket partner</p>
     </div>
     {% endif %}
