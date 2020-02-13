@@ -32,16 +32,18 @@
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date > now %}
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           <div class="element-item {{ post.category }} box">
             <span class="image left" style="height:100%; max-width: 33%"><img src="{{ post.image }}"/></span>
             <header class="right">
               <h2 style="text-decoration: capitalize;">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                {{ post.title }}
               </h2>
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
               <p>{{ post.excerpt }}</p>
             </header>
            </div>
+          </a>
         {% endif %}
         {% endfor %}
         </div>
