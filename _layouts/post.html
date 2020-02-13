@@ -42,7 +42,7 @@
 	<h3 style="text-transform: capitalize;">Featured Events</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.posts %}
+  {% for post in site.posts reverse %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if date > now and site.tiles-source == 'posts' and post.archived != true and post.featured == true and post.url != page.url %}
