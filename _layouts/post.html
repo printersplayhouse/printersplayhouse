@@ -24,7 +24,7 @@
 			<h1>{{ page.title }}</h1>
       <h3>{{ page.description }}</h3>
 		</header>
-		<p>{{ page.address }}</p>
+		{% if page.address %}<p>{{ page.address }}</p>{% endif %}
 		<p>{{ content }}</p>
 		{% if page.ticketlink %}
     <div class="box">
