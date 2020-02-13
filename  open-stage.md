@@ -15,8 +15,8 @@ nav-menu: true
 <!-- Intro -->
 <section id="intro" class="spotlights" style="margin-top:2em;">
 	<div class="inner">
-		<h2>Theatre</h2>
-		<p>We're energetic 4-piece function band playing an eclectic, electric playlist from more than five decades of party music. Our foot-stomping live act is full of infectious, sing-along melodies and highly dance-able tunes that are guaranteed to get you on the dancefloor.</p>
+		<h2>Open Stage Night</h2>
+		<p>A short description of the night</p>
 	</div>
 </section>
 
