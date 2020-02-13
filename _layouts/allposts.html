@@ -34,7 +34,7 @@
         {% if date > now %}
           <div class="element-item {{ post.category }} box">
             <span class="image left" style="width:50%"><img src="../{{ post.image }}"/></span>
-            <div class="right">
+            <span class="right">
               <header class="major">
                 <h3 style="text-decoration: capitalize;">
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -44,7 +44,7 @@
               <p>
                 {{ post.excerpt }}
               </p>
-            </div>
+            </span>
            </div>
         {% endif %}
         {% endfor %}
