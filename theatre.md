@@ -13,11 +13,36 @@ nav-menu: true
 
 
 <!-- Intro -->
-<section id="intro" class="spotlights" style="margin-top:2em;">
+<section id="intro" style="margin-top:2em;">
 	<div class="inner">
-		<h2>Theatre</h2>
-		<p>We're energetic 4-piece function band playing an eclectic, electric playlist from more than five decades of party music. Our foot-stomping live act is full of infectious, sing-along melodies and highly dance-able tunes that are guaranteed to get you on the dancefloor.</p>
+		<h2>Theatre< Productions</h2>
+		<p>We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups.</p>
+    <p>If you are seeking the best in new theatre in Eastbourne, The Playhouse is the place to go!</p>
 	</div>
+</section>
+
+<section id="image grid" style="margin-top:2em;">
+  <div class="row 100% uniform">
+    <div class="4u">
+      <img src="/assets/images/default--open-stage" />
+    </div>
+    <div class="4u">
+      <img src="/assets/images/default--open-stage" />
+    </div>
+    <div class="4u">
+      <img src="/assets/images/default--open-stage" />
+    </div>
+  </div>
+</section>
+
+<section id="intro" style="margin-top:2em;">
+  <div class="inner">
+    <h2>Direct Address</h2>
+    <p>A chance for performers to work on and perform monologues and songs to industry standard. 8 actors with 3 two minute pieces working with PPH professional directors to culminate in a showcase performance.</p>
+    <p>8 actors. 3, 2 min monologues combining for an hour long performance in the Playhouse.</p>
+    <p>Every third Friday of every other month!</p>
+    <p>We are already building a great network of artists and musicians locally and nationally, but are always on the lookout for new talent to showcase; either downstairs or in joint promotions upstairs in the theatre. Let us know about you by emailing chris@printersplayhouse.co.uk – and it could be the beginning of a glittering career, or at least a lovely gig at Printers Playhouse!</p>
+  </div>
 </section>
 
 <!-- About -->	
