@@ -31,7 +31,7 @@
         {% for post in site.posts reversed %}
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
-        {% if date > now %}
+        {% if date >= now %}
           <div class="element-item {{ post.category }} box">
             <span class="image left" style="height:100%; max-width: 33%"><img src="{{ post.image }}"/></span>
             <header class="right">
@@ -43,7 +43,7 @@
               {% if page.ticketlink %}
                 <li><a href="{{ post.url | prepend: site.baseurl }}" class="button scrolly special">Book Now</a></li>
               {% endif %}
-              
+
             <ul class="actions">
                 <li><a href="{{ post.url | prepend: site.baseurl }}" class="button scrolly special">{% if post.ticketlink %}Book Tickets{% else %}View More{% endif %}</a></li>
               </ul>
