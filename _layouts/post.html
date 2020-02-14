@@ -19,7 +19,6 @@
 <!-- One -->
 <section id="one">
 	<div class="inner">
-    {% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
 		<header class="major">
 			<h1>{{ page.title }}</h1>
 		</header>
@@ -34,6 +33,7 @@
       </ul>
     </div>
     {% endif %}
+    {% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
 	</div>
 </section>
 
