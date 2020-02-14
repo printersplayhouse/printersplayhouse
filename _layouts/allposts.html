@@ -40,7 +40,7 @@
               </h2>
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
               <p>{{ post.excerpt }}</p>
-              {% if page.ticketlink %}
+              {% if post.ticketlink %}
               <ul class="actions">
                 <li><a href="{{ post.ticketlink }}" class="button scrolly special">Book Tickets</a></li>
               </ul>
