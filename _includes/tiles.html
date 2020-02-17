@@ -1,6 +1,5 @@
 <section id="one" class="tiles">
-  {% if site.post.featured == true %}
-  {% for post in site.posts limit:site.tiles-count and %}
+  {% for post in site.categories.music limit:site.tiles-count and %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if date > now and site.tiles-source == 'posts' and post.archived != true %}
@@ -15,7 +14,6 @@
   </article>
   {% endif %}
   {% endfor %}
-  {% endif %}
   {% for page in site.html_pages %}
   {% if site.tiles-source == 'pages' and page.archived != false %}
   <article>
