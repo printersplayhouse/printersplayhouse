@@ -3,7 +3,7 @@ layout: post
 title: Ukelele Army
 description: example description
 image: '../assets/images/default--ukelele-army.jpg'
-category: ['get involved']
+category: ukelele
 featured: false
 archived: false
 date: 2020-02-18 20:00:00

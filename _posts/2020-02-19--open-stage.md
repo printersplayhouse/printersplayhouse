@@ -3,7 +3,7 @@ layout: post
 title: Open Stage
 description: example description
 image: '../assets/images/default--open-stage.jpg'
-category: ['get involved']
+category: music
 featured: false
 archived: false
 date: 2020-02-19 20:00:00
