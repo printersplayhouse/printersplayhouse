@@ -3,10 +3,10 @@ layout: post
 title: Open Stage
 description: example description
 image: '../assets/images/default--open-stage.jpg'
-category: music
+category: get involved
 featured: false
 archived: false
-date: 2020-02-17 20:00:00
+date: 2020-02-19 20:00:00
 venue: Printers Playhouse, 44 Grove Road, Eastbourne
 ---
 

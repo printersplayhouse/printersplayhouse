@@ -3,7 +3,7 @@ layout: post
 title: PPH Community Choir
 description: example description
 image: '../assets/images/default--pph-choir.jpg'
-category: get involved
+category: choir
 featured: false
 archived: false
 date: 2020-02-17 19:00:00

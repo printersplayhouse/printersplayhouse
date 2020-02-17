@@ -1,5 +1,5 @@
 <section id="one" class="tiles">
-  {% if post.featured == true %}
+  {% if site.post.featured == true %}
   {% for post in site.posts limit:site.tiles-count and %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
