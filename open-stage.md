@@ -22,10 +22,10 @@ nav-menu: true
 
 <!-- About -->	
 <div class="innersmall">
-	<h3 style="text-transform: capitalize;">Upcoming Shows</h3>
+	<h3 style="text-transform: capitalize;">Upcoming Nights</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.categories.open-stage %}
+  {% for post in site.categories.open-stage reversed %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
