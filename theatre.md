@@ -23,13 +23,13 @@ nav-menu: true
 
 <section id="image grid" style="margin-top:2em;">
   <div class="row 100% uniform">
-    <div class="4u">
+    <div class="4u" style="padding:0; width: 100%;">
       <img src="/assets/images/default--open-stage.jpg" />
     </div>
-    <div class="4u">
+    <div class="4u" style="padding:0; width: 100%;">
       <img src="/assets/images/default--open-stage.jpg" />
     </div>
-    <div class="4u">
+    <div class="4u" style="padding:0; width: 100%;">
       <img src="/assets/images/default--open-stage.jpg" />
     </div>
   </div>
