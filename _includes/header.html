@@ -22,8 +22,8 @@
 	    	{% endif %}
 		{% endfor %}
 		<li><a href="../events" class="button special fit">View All Events</a></li>
-		{% for page in site.html_pages %}
-		    {% if page.layout != "home" and page.nav-menu == true and page.categories.nights %}
+		{% for page in site.html_pages.nights %}
+		    {% if page.layout != "home" and page.nav-menu == true %}
 		        <li>
 		        	<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
 		        </li>
