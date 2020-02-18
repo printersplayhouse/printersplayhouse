@@ -2,7 +2,7 @@
 layout: page
 title: Theatre
 description: 'Theatre at Printers Playhouse'
-category: home
+category: nights
 seo_description: 'One of the top cover bands in Sussex playing an eclectic, electric playlist from five decades of rock, pop, funk and blues. Find out more about the band.'
 nav-menu: true
 ---
