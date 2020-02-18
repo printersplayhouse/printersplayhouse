@@ -27,7 +27,7 @@
         </div> 
 
     <!-- post content here -->
-        <div style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
+        <div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
         {% for post in site.posts reversed %}
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
