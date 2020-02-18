@@ -41,7 +41,7 @@
 	<h3 style="text-transform: capitalize;">More from Printers</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.posts reversed %}
+  {% for post in site.posts.{{ page.category }} reversed %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if date > now and site.tiles-source == 'posts' and post.archived != true and post.featured == true and post.url != page.url %}
