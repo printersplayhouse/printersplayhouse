@@ -50,7 +50,7 @@ nav-menu: true
 	<h3 style="text-transform: capitalize;">Upcoming Shows</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.category.theatre %}
+  {% for post in site.categories.theatre %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
