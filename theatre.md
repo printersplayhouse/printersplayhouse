@@ -15,7 +15,7 @@ nav-menu: true
 <!-- Intro -->
 <section id="intro" style="margin-top:2em;">
 	<div class="inner">
-		<h2>Theatre< Productions</h2>
+		<h2>Theatre Productions</h2>
 		<p>We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups.</p>
     <p>If you are seeking the best in new theatre in Eastbourne, The Playhouse is the place to go!</p>
 	</div>
@@ -24,13 +24,13 @@ nav-menu: true
 <section id="image grid" style="margin-top:2em;">
   <div class="row 100% uniform">
     <div class="4u">
-      <img src="/assets/images/default--open-stage" />
+      <img src="/assets/images/default--open-stage.jpg" />
     </div>
     <div class="4u">
-      <img src="/assets/images/default--open-stage" />
+      <img src="/assets/images/default--open-stage.jpg" />
     </div>
     <div class="4u">
-      <img src="/assets/images/default--open-stage" />
+      <img src="/assets/images/default--open-stage.jpg" />
     </div>
   </div>
 </section>
@@ -50,7 +50,7 @@ nav-menu: true
 	<h3 style="text-transform: capitalize;">Upcoming Shows</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.categories.theatre %}
+  {% for post in site.category.theatre %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
