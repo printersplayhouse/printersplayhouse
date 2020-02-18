@@ -29,12 +29,7 @@
     <!-- post content here -->
         <div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
         {% for post in site.posts reversed %}
-        {% assign currentdate = post.date | date: "%B" %}
-        {% if currentdate != date %}
-        <h2>{{ currentdate }}</h2>
-        {% assign date = currentdate %}
-        {% endif %}
-
+        <h2>{{ post.date | date: "%b %-d, %Y" }}</h2>
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date >= now %}
@@ -44,7 +39,6 @@
               <h2 style="text-decoration: capitalize;">
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h2>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
               <p>{{ post.excerpt }}</p>
               {% if post.ticketlink %}
               <ul class="actions">
