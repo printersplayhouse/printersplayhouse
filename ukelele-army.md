@@ -15,7 +15,8 @@ nav-menu: true
 <!-- Intro -->
 <section id="intro" class="spotlights" style="margin-top:2em;">
 	<div class="inner">
-		<h2>Open Stage Night</h2>
+		<h2>{{ page.title }}</h2>
+    <h4>{{ page.description }}</h4>
 		<p>A short description of the night</p>
 	</div>
 </section>

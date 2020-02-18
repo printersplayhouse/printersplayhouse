@@ -15,7 +15,8 @@ nav-menu: true
 <!-- Intro -->
 <section id="intro" style="margin-top:2em;">
 	<div class="inner">
-		<h2>Theatre Productions</h2>
+		<h2>{{ page.title }}</h2>
+    <h4>{{ page.description }}</h4>
 		<p>We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups.</p>
     <p>If you are seeking the best in new theatre in Eastbourne, The Playhouse is the place to go!</p>
 	</div>
