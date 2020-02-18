@@ -27,12 +27,12 @@
         </div> 
 
     <!-- post content here -->
-        <div class="grid">
+        <div style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
         {% for post in site.posts reversed %}
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date >= now %}
-          <div class="element-item {{ post.category }} box">
+          <div class="{{ post.category }} box" style="width: 100%; left: 0px; top: 0px;">
             <span class="image left" style="height:100%; max-width: 35%"><img src="{{ post.image }}"/></span>
             <header class="right">
               <h2 style="text-decoration: capitalize;">
