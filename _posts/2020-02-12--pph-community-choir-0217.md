@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PPH Community Choir
+title: Community Choir
 description: example description
 image: '../assets/images/default--pph-choir.jpg'
 category: choir
