@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Open Stage Night
@@ -26,7 +25,7 @@ nav-menu: true
 	<h3 style="text-transform: capitalize;">Upcoming Shows</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.categories.theatre %}
+  {% for post in site.categories.open-stage %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
@@ -34,7 +33,7 @@ nav-menu: true
     </span>
     <header>
       <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <h4>{{ post.live-date }}</h4>
+      <h4>{{ post.date | date: "%a, %b %d, %y" }}</h4>
     </header>
   </article>
   {% endif %}

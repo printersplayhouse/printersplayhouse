@@ -33,7 +33,7 @@ nav-menu: true
     </span>
     <header>
       <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <h4>{{ post.live-date }}</h4>
+      <h4>{{ post.date | date: "%a, %b %d, %y" }}</h4>
     </header>
   </article>
   {% endif %}

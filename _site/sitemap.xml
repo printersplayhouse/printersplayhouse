@@ -20,12 +20,12 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/open-stage/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/theatre/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/ukelele-army/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/open-stage/</loc>
 </url>
 </urlset>
