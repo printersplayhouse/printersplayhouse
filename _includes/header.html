@@ -18,7 +18,7 @@
 	<ul class="links">
         {% for page in site.pages %}
 		    {% if page.layout == "home" %}
-		        <li><a href="{{ site.url }}">{{ page.title }}</a></li>
+		        <li><a href="{{ "" | absolute_url }}">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 		<li><a href="../events" class="button special fit">View All Events</a></li>
