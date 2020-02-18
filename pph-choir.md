@@ -22,10 +22,10 @@ nav-menu: true
 
 <!-- About -->	
 <div class="innersmall">
-	<h3 style="text-transform: capitalize;">Upcoming Shows</h3>
+	<h3 style="text-transform: capitalize;">Upcoming Choir Events</h3>
 </div>
 <section id="two" class="tiles">
-  {% for post in site.categories.theatre %}
+  {% for post in site.categories.choir %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
