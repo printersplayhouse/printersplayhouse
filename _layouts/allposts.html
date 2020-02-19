@@ -32,12 +32,11 @@
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date >= now %}
-        <h2>{{ post.date | date: "%b %-d, %Y" }}</h2>
           <div class="element-item {{ post.category }} box" style="width: 100%; left: 0px; top: 0px;">
             <span class="image left" style="height:100%; max-width: 35%"><img src="{{ post.image }}"/></span>
             <header class="right">
               <h2 style="text-decoration: capitalize;">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}<br />{{ post.title }}</a>
               </h2>
               <p>{{ post.excerpt }}</p>
               {% if post.ticketlink %}
