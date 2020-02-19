@@ -19,13 +19,17 @@
 <!-- One -->
 <section id="one">
 	<div class="inner row">
+    
     <div class="6u 12u(small) left">
-  		<header class="major">
-  			<h1>{{ page.title }}</h1>
-  		</header>
+      {% if page.image %}<span class="image"><img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.image-alt }}" style="width: 100%; max-width: 400px;" /></span>{% endif %}
+    </div>
+    <div class="6u 12u(small) right">
+      <header class="major">
+        <h1>{{ page.title }}</h1>
+      </header>
       {% if page.venue %}<p>Venue: {{ page.venue }}</p>{% endif %}
-  		<p>{{ content }}</p>
-  		{% if page.ticketlink %}
+      <p>{{ content }}</p>
+      {% if page.ticketlink %}
       <div class="box">
         <h3 style="margin-bottom: 0;">Get Tickets</h3>
         <p>Don't miss out, book tickets now - you will be redirected to our ticket provider to purchase tickets.</p>
@@ -34,9 +38,6 @@
         </ul>
       </div>
       {% endif %}
-    </div>
-    <div class="6u 12u(small) right">
-      {% if page.image %}<span class="image"><img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.image-alt }}" style="width: 100%; max-width: 400px;" /></span>{% endif %}
     </div>
 	</div>
 </section>
