@@ -50,7 +50,7 @@
   {% for post in site.related_posts reversed %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
-  {% if date > now and site.tiles-source == 'posts' and post.archived != true and post.featured == true and post.url != page.url %}
+  {% if date < now and site.tiles-source == 'posts' and post.archived != true and post.featured == true and post.url != page.url %}
   <article>
     <span class="image">
       <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
