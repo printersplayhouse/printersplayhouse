@@ -8,7 +8,7 @@ featured: true
 archived: false
 date: 2020-02-21 21:00:00
 venue: Printers Playhouse, 44 Grove Road, Eastbourne
-ticketlink: 'https://johnhayn.es'
+ticketlink: 'https://johnhayn.es/'
 ---
 
 Joel's sophisticated and soulful sounds never fail to please! Downstairs at Printers. 9pm. Free.
