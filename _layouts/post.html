@@ -19,21 +19,25 @@
 <!-- One -->
 <section id="one">
 	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-    {% if page.venue %}<p>Venue: {{ page.venue }}</p>{% endif %}
-		<p>{{ content }}</p>
-		{% if page.ticketlink %}
-    <div class="box">
-      <h3 style="margin-bottom: 0;">Get Tickets</h3>
-      <p>Don't miss out, book tickets now - you will be redirected to our ticket provider to purchase tickets.</p>
-      <ul class="actions">
-      <li><a href="{{ post.ticketlink}}" class="button scrolly special">Book Now</a></li>
-      </ul>
+    <div class="left">
+  		<header class="major">
+  			<h1>{{ page.title }}</h1>
+  		</header>
+      {% if page.venue %}<p>Venue: {{ page.venue }}</p>{% endif %}
+  		<p>{{ content }}</p>
+  		{% if page.ticketlink %}
+      <div class="box">
+        <h3 style="margin-bottom: 0;">Get Tickets</h3>
+        <p>Don't miss out, book tickets now - you will be redirected to our ticket provider to purchase tickets.</p>
+        <ul class="actions">
+        <li><a href="{{ post.ticketlink}}" class="button scrolly special">Book Now</a></li>
+        </ul>
+      </div>
+      {% endif %}
     </div>
-    {% endif %}
-    {% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.image-alt }}" style="max-width: 400px;" /></span>{% endif %}
+    <div class="right">
+      {% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.image-alt }}" style="max-width: 400px;" /></span>{% endif %}
+    </div>
 	</div>
 </section>
 
