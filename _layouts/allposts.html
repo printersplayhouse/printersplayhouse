@@ -29,10 +29,10 @@
     <!-- post content here -->
         <div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
         {% for post in site.posts reversed %}
-        <h2>{{ post.date | date: "%b %-d, %Y" }}</h2>
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date >= now %}
+        <h2>{{ post.date | date: "%b %-d, %Y" }}</h2>
           <div class="element-item {{ post.category }} box" style="width: 100%; left: 0px; top: 0px;">
             <span class="image left" style="height:100%; max-width: 35%"><img src="{{ post.image }}"/></span>
             <header class="right">
