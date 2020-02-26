@@ -15,16 +15,18 @@ nav-menu: true
 <!-- Intro -->
 <section id="intro" class="spotlights" style="margin-top:2em;">
 	<div class="inner">
-		<h2>{{ page.title }}</h2>
+		<h1>{{ page.title }}</h1>
     <h4>{{ page.description }}</h4>
 		<p>A short description of the night</p>
 	</div>
 </section>
 
 <!-- About -->	
+{% if site.categories.ukelele %}
 <div class="innersmall">
-	<h3 style="text-transform: capitalize;">Upcoming Shows</h3>
+	<h2 style="text-transform: capitalize;">Upcoming Shows</h2>
 </div>
+{% endif %}
 <section id="two" class="tiles">
   {% for post in site.categories.ukelele reversed %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
