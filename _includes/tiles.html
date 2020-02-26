@@ -1,3 +1,9 @@
+{% if site.categories.music %}
+<div class="innersmall">
+  <h2>Live Music at Printers</h2>
+</div>
+{% endif %}
+
 <section id="one" class="tiles">
   {% for post in site.categories.music reversed limit:site.tiles-count %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}

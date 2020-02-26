@@ -15,23 +15,19 @@ nav-menu: true
 <!-- Intro -->
 <section id="intro" style="margin-top:2em;">
 	<div class="inner">
-		<h2>{{ page.title }}</h2>
+		<h1>{{ page.title }}</h1>
     <h4>{{ page.description }}</h4>
-		<p>We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups.</p>
-    <p>If you are seeking the best in new theatre in Eastbourne, The Playhouse is the place to go!</p>
+		<p>We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups. If you are seeking the best in new theatre in Eastbourne, The Playhouse is the place to go!</p>
 	</div>
-</section>
-
-<section id="image grid" style="margin-top:2em;">
   <div class="row 100% uniform">
     <div class="4u">
-      <img style="padding:0; width: 100%;" src="/assets/images/default--open-stage.jpg" />
+      <img style="padding:0; width: 100%;" src="/assets/images/theatre--children-acting-period-drama.jpg" />
     </div>
     <div class="4u">
-      <img style="padding:0; width: 100%;" src="/assets/images/default--open-stage.jpg" />
+      <img style="padding:0; width: 100%;" src="/assets/images/theatre--group-of-players.jpg" />
     </div>
     <div class="4u">
-      <img style="padding:0; width: 100%;" src="/assets/images/default--open-stage.jpg" />
+      <img style="padding:0; width: 100%;" src="/assets/images/theatre--group-rehearsing.jpg" />
     </div>
   </div>
   <div class="inner">
@@ -44,9 +40,11 @@ nav-menu: true
 </section>
 
 <!-- About -->	
+{% if site.categories.theatre %}
 <div class="innersmall">
-	<h3 style="text-transform: capitalize;">Upcoming Shows</h3>
+	<h2 style="text-transform: capitalize;">Upcoming Shows</h2>
 </div>
+{% endif %}
 <section id="two" class="tiles">
   {% for post in site.categories.theatre reversed %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
