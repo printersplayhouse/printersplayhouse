@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Ukelele Army
-description: 'The world-famous Ukelele Army'
+description: 'The Printers Ukulele Army meets every Tuesday night at 8 pm and tuition is given if needed, and even instruments are available!'
 category: nights
-seo_description: 'One of the top cover bands in Sussex playing an eclectic, electric playlist from five decades of rock, pop, funk and blues. Find out more about the band.'
+seo_description: 'The Printers Ukulele Army meets every Tuesday night at 8 pm and tuition is given if needed, and even instruments are available!'
 nav-menu: true
 ---
 
@@ -17,8 +17,14 @@ nav-menu: true
 	<div class="inner">
 		<h1>{{ page.title }}</h1>
     <h4>{{ page.description }}</h4>
-		<p>A short description of the night</p>
+		<p>Bring your favourite music and learn together as a group (or ukulele army!). All abilities welcome.</p>
+    <p>Whether you are a novice or virtuoso, come for a strum!  Meet new people and sing and play classic songs from all decades and genres.</p>
+    <p>We are already building a great network of artists and musicians locally and nationally, but are always on the lookout for new talent to showcase; either downstairs or in joint promotions upstairs in the theatre. Let us know about you by emailing <a href="mailto:chris@printersplayhouse.co.uk">chris@printersplayhouse.co.uk</a> – and it could be the beginning of a glittering career, or at least a lovely gig at Printers Playhouse!</p>
 	</div>
+  <div class="row 100% uniform">
+    <div class="4u 12u$(medium)">
+      <img style="padding:0; width: 100%;" src="/assets/images/theatre--children-acting-period-drama.jpg" />
+    </div>
 </section>
 
 <!-- About -->	

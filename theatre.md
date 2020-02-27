@@ -20,13 +20,13 @@ nav-menu: true
 		<p>We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups. If you are seeking the best in new theatre in Eastbourne, The Playhouse is the place to go!</p>
 	</div>
   <div class="row 100% uniform">
-    <div class="4u">
+    <div class="4u 12u$(medium)">
       <img style="padding:0; width: 100%;" src="/assets/images/theatre--children-acting-period-drama.jpg" />
     </div>
-    <div class="4u">
+    <div class="4u 12u$(medium)">
       <img style="padding:0; width: 100%;" src="/assets/images/theatre--group-of-players.jpg" />
     </div>
-    <div class="4u">
+    <div class="4u 12u$(medium)">
       <img style="padding:0; width: 100%;" src="/assets/images/theatre--group-rehearsing.jpg" />
     </div>
   </div>

@@ -22,18 +22,18 @@ nav-menu: true
     <p>Each and every act is recorded live on video by the talented John Sovcom - you'll find uploads from each week on his <a href="https://www.youtube.com/channel/UCm4h53G3SOpeEGazYPE4Keg">YouTube channel</a>.</p>
     <h3>Highlights From The Nights</h3>
     <div class="row 100% uniform" stlye="">
-      <div class="6u">
+      <div class="6u 12u$(medium)">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/OVBWsDXn3uI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="6u">
+      <div class="6u 12u$(medium)">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/U0Q_6xPfvUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     <div class="row 100% uniform" stlye="">
-      <div class="6u">
+      <div class="6u 12u$(medium)">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sXO6sZMwl28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="6u">
+      <div class="6u 12u$(medium)">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/CmWAAmHfVrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
