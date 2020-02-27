@@ -2,7 +2,7 @@
 layout: page
 title: Youth Theatre
 description: 'If you are aged 6 to 18 and looking for an opportunity to get involved in theatre and performance, to learn new skills or develop existing ones then Printers Pintsized and the Printers Youth Theatre may be the perfect solution.'
-category: nights
+category: get-involved
 seo_description: 'If you are aged 6 to 18 and looking for an opportunity to get involved in theatre and performance, to learn new skills or develop existing ones then Printers Pintsized and the Printers Youth Theatre may be the perfect solution.'
 nav-menu: false
 ---
