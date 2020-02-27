@@ -18,13 +18,13 @@ nav-menu: true
     <p>Everyone is welcome – no audition or prior experience is required. The choir is led by experienced singing teacher Viv Berry. Come along and sing with our friendly community choir.</p>
 	</div>
   <div class="row 100% uniform" stlye="">
-    <div class="4u">
+    <div class="4u 12u$(medium)">
       <img style="padding:0; width: 100%;" src="/assets/images/pph-community-choir--man-wearing-tshirt-with-logo.jpg" />
     </div>
-    <div class="4u">
+    <div class="4u 12u$(medium)">
       <img style="padding:0; width: 100%;" src="/assets/images/pph-community-choir--group-of-choir-on-stage.jpg" />
     </div>
-    <div class="4u">
+    <div class="4u 12u$(medium)">
       <img style="padding:0; width: 100%;" src="/assets/images/default--pph-choir.jpg" />
     </div>
   </div>

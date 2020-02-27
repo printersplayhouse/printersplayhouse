@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Ukelele Army
-description: 'The Printers Ukulele Army meets every Tuesday night at 8 pm and tuition is given if needed, and even instruments are available!'
+title: Youth Theatre
+description: 'If you are aged 6 to 18 and looking for an opportunity to get involved in theatre and performance, to learn new skills or develop existing ones then Printers Pintsized and the Printers Youth Theatre may be the perfect solution.'
 category: nights
-seo_description: 'The Printers Ukulele Army meets every Tuesday night at 8 pm and tuition is given if needed, and even instruments are available!'
-nav-menu: true
+seo_description: 'If you are aged 6 to 18 and looking for an opportunity to get involved in theatre and performance, to learn new skills or develop existing ones then Printers Pintsized and the Printers Youth Theatre may be the perfect solution.'
+nav-menu: false
 ---
 
 <!-- Main -->
@@ -13,35 +13,34 @@ nav-menu: true
 
 
 <!-- Intro -->
-<section id="intro" class="spotlights" style="margin-top:2em;">
+<section id="intro" style="margin-top:2em;">
 	<div class="inner">
 		<h1>{{ page.title }}</h1>
     <h4>{{ page.description }}</h4>
-		<p>Bring your favourite music and learn together as a group (or ukulele army!). All abilities welcome.</p>
-    <p>Whether you are a novice or virtuoso, come for a strum!  Meet new people and sing and play classic songs from all decades and genres.</p>
+		<p>Within weekly workshops on Wednesdays in term time, our youth groups work on new scripts, existing work, and even devise their own pieces – not to be missed!</p>
     <p>We are already building a great network of artists and musicians locally and nationally, but are always on the lookout for new talent to showcase; either downstairs or in joint promotions upstairs in the theatre. Let us know about you by emailing <a href="mailto:chris@printersplayhouse.co.uk">chris@printersplayhouse.co.uk</a> – and it could be the beginning of a glittering career, or at least a lovely gig at Printers Playhouse!</p>
 	</div>
   <div class="row 100% uniform">
     <div class="4u 12u$(medium)">
-      <img style="padding:0; width: 100%;" src="/assets/images/ukelele-army--hove-lawns-ladies.jpg" />
+      <img style="padding:0; width: 100%;" src="/assets/images/youth-theatre--fighting-animals.jpg" />
     </div>
     <div class="4u 12u$(medium)">
-      <img style="padding:0; width: 100%;" src="/assets/images/ukelele-army--wide-shot-whole-group.jpg" />
+      <img style="padding:0; width: 100%;" src="/assets/images/youth-theatre--get-involved.jpg" />
     </div>
     <div class="4u 12u$(medium)">
-      <img style="padding:0; width: 100%;" src="/assets/images/ukelele-army--halloween.jpg" />
+      <img style="padding:0; width: 100%;" src="/assets/images/youth-theatre--young-boy-pointing.jpg" />
     </div>
   </div>
 </section>
 
 <!-- About -->	
-{% if site.categories.ukelele %}
+{% if site.categories.theatre %}
 <div class="innersmall">
 	<h2 style="text-transform: capitalize;">Upcoming Shows</h2>
 </div>
 {% endif %}
 <section id="two" class="tiles">
-  {% for post in site.categories.ukelele reversed %}
+  {% for post in site.categories.theatre reversed %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
