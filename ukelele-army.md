@@ -37,7 +37,7 @@ nav-menu: true
 <!-- About -->	
 {% if site.categories.ukelele %}
 <div class="innersmall">
-	<h2 style="text-transform: capitalize;">Upcoming Shows</h2>
+	<h2 style="text-transform: capitalize;">Upcoming Events</h2>
 </div>
 {% endif %}
 <section id="two" class="tiles">
