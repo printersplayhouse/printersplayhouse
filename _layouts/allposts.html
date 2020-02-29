@@ -36,9 +36,9 @@
             <span class="image left" style="height:100%; max-width: 35%"><img src="{{ post.image }}"/></span>
             <header class="right">
               <h2 style="text-decoration: capitalize;">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}<br />{{ post.title }}</a>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h2>
-              <h4>{{ page.price }}</h4>
+              <h4>{{ post.date | date: "%b %-d, %Y" }}<br />{{ post.price }}</h4>
               <p>{{ post.excerpt }}</p>
               {% if post.ticketlink %}
               <ul class="actions">
