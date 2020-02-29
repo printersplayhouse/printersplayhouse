@@ -20,10 +20,10 @@ nav-menu: true
 </section>
 
 <!-- About -->	
-<section id="band">
-	<section class="spotlights">
+<!-- <section id="venue">
+	<section class="spotlights"> -->
 		<!-- The Playhouse -->
-		<section>
+		<!-- <section>
 			<div style="background:url('../assets/images/stacey-singer.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
 			<div class="content">
 				<div class="inner">
@@ -33,9 +33,9 @@ nav-menu: true
 					<p>Printers Playhouse has a fantastic programme of live music and theatre, run from both the acoustic stage ‘Downstairs at the Printers’, and also from the Theatre space on the First Floor.</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- The Bar -->
-		<section>
+		<!-- <section>
 			<div style="background:url('../assets/images/stacey-singer.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
 			<div class="content">
 				<div class="inner">
@@ -45,9 +45,9 @@ nav-menu: true
 					<p>Printers Playhouse has a fantastic programme of live music and theatre, run from both the acoustic stage ‘Downstairs at the Printers’, and also from the Theatre space on the First Floor.</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- The Stage -->
-		<section>
+		<!-- <section>
 			<div style="background:url('../assets/images/stacey-singer.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
 			<div class="content">
 				<div class="inner">
@@ -57,9 +57,9 @@ nav-menu: true
 					<p>Printers Playhouse has a fantastic programme of live music and theatre, run from both the acoustic stage ‘Downstairs at the Printers’, and also from the Theatre space on the First Floor.</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- The Team -->
-		<section>
+		<!-- <section>
 			<div style="background:url('../assets/images/stacey-singer.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
 			<div class="content">
 				<div class="inner">
@@ -70,6 +70,6 @@ nav-menu: true
 				</div>
 			</div>
 		</section>
-	</section>
-</section>
+	</section> -->
+<!-- </section> -->
 </div>

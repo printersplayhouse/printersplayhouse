@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/pph-community-choir-0217/</loc>
-<lastmod>2020-02-17T19:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/open-stage-0219/</loc>
-<lastmod>2020-02-19T20:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/ukelele-army-0225/</loc>
-<lastmod>2020-02-25T20:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/joel-white/</loc>
-<lastmod>2020-02-27T21:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/404/</loc>
 </url>
 <url>
@@ -36,6 +20,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/open-stage/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/team/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/theatre/</loc>
