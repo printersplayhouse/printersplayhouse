@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Community Choir
+title: Dandelion Charm
 description: The best open mic in Eastbourne. All musicians welcome! All poets welcome! All storytellers welcome! All comedians welcome!
 price: FREE
-image: '../assets/images/default--open-stage.jpg'
-category: open-stage
+image: '../assets/images/0307-dandelion-charm.jpg'
+category: music
 featured: false
 archived: false
-date: 2020-03-04 20:00:00
+date: 2020-03-07 21:00:00
 venue: Printers Playhouse, 44 Grove Road, Eastbourne
 ---
 

@@ -7,7 +7,7 @@ image: '../assets/images/default--pph-choir.jpg'
 category: choir
 featured: false
 archived: false
-date: 2020-03-02 19:00:00
+date: 2020-03-09 19:00:00
 venue: Printers Playhouse, 44 Grove Road, Eastbourne
 ---
 
