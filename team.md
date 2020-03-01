@@ -23,19 +23,6 @@ nav-menu: false
 <section id="team">
 	<section class="spotlights">
 		<section>
-			<div style="background:url('../assets/images/team--Harriet-Thorpe.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
-			<div class="content">
-				<div class="inner">
-					<header class="major">
-						<h3>Harriet Thorpe – patron</h3>
-					</header>
-					<p><strong>Harriet Thorpe attended London’s Central School of Speech and Drama before appearing on our screens in The Brittas Empire, playing Carole Parkinson, an emotionally unstable receptionist who permanently kept her children in the drawers under her desk. Thorpe also starred in a celebrity edition of The Weakest Link as Madame Morrible, in which she was voted off in the first round.</strong></p>
-					<p>Harriet also played Fleur in Absolutely Fabulous, an eccentric and somewhat odd work-colleague and along with working extensively with Dawn French and Jennifer Saunders, she has also appeared in Alexei Sayle’s Stuff, A Bit of Fry and Laurie, Casualty, The Bill and Midsomer Murders.</p>
-					<p>She also notably played Beverley Osman in the BBC children’s comedy drama No Sweat starring boyband North and South.</p>
-				</div>
-			</div>
-		</section>
-		<section>
 			<div style="background:url('../assets/images/team--John.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
 			<div class="content">
 				<div class="inner">
@@ -62,6 +49,19 @@ nav-menu: false
 			</div>
 		</section>
 		<section>
+			<div style="background:url('../assets/images/team--Harriet-Thorpe.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
+			<div class="content">
+				<div class="inner">
+					<header class="major">
+						<h3>Harriet Thorpe – patron</h3>
+					</header>
+					<p><strong>Harriet Thorpe attended London’s Central School of Speech and Drama before appearing on our screens in The Brittas Empire, playing Carole Parkinson, an emotionally unstable receptionist who permanently kept her children in the drawers under her desk. Thorpe also starred in a celebrity edition of The Weakest Link as Madame Morrible, in which she was voted off in the first round.</strong></p>
+					<p>Harriet also played Fleur in Absolutely Fabulous, an eccentric and somewhat odd work-colleague and along with working extensively with Dawn French and Jennifer Saunders, she has also appeared in Alexei Sayle’s Stuff, A Bit of Fry and Laurie, Casualty, The Bill and Midsomer Murders.</p>
+					<p>She also notably played Beverley Osman in the BBC children’s comedy drama No Sweat starring boyband North and South.</p>
+				</div>
+			</div>
+		</section>
+		<!-- <section>
 			<div style="background:url('../assets/images/team--CJ.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
 			<div class="content">
 				<div class="inner">
@@ -98,7 +98,7 @@ nav-menu: false
 					<p>We thank Andy from the bottom of our hearts, and we have no doubt that you will see him appearing either on stage at the Printers Playhouse or pulling you a pint behind the bar!</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 	</section>
 </section>
 <section id="supporters">
