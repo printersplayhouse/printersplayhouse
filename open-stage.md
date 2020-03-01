@@ -18,7 +18,7 @@ nav-menu: true
 		<h1>{{ page.title }}</h1>
     <h4>{{ page.description }}</h4>
     <p>All musicians welcome! All poets welcome! All storytellers welcome! All comedians welcome!</p>
-    <p>Have we missed anyone? Basically anyone who needs a mic to express their art – come along! The evening is hosted by Steve Carville of the band No Such Thing. Steve is supported by a wonderful group of musiciains who regularly take to the stage to support anyone that needs percussion, bass or guitar accompaniment.</p>
+    <p>Have we missed anyone? Basically anyone who needs a mic to express their art – come along! The evening is hosted by Steve Carville of the band No Such Thing. Steve is supported by a wonderful group of musicians who regularly take to the stage to support anyone that needs percussion, bass or guitar accompaniment.</p>
     <p>Each and every act is recorded live on video by the talented John Sovcom - you'll find uploads from each week on his <a href="https://www.youtube.com/channel/UCm4h53G3SOpeEGazYPE4Keg">YouTube channel</a>.</p>
     <h3>Highlights From The Nights</h3>
     <div class="row 100% uniform" stlye="">
