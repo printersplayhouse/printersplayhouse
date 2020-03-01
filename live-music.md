@@ -4,7 +4,7 @@ title: Live Music
 description: 'Live Music at Printers Playhouse'
 category: nights
 seo_description: 'Live Music at Printers Playhouse'
-nav-menu: true
+nav-menu: false
 ---
 
 <!-- Main -->
