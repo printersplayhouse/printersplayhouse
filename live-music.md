@@ -26,7 +26,7 @@ nav-menu: true
 </div>
 {% endif %}
 <section id="two" class="tiles">
-  {% for post in site.categories.theatre reversed %}
+  {% for post in site.categories.music reversed %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
