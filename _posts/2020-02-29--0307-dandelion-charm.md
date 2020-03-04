@@ -3,6 +3,7 @@ layout: post
 title: Dandelion Charm
 description: Fabulous harmonies and beautiful song-writing from John and Clarecomedians welcome!
 price: FREE
+ticketlink: 'https://onlineticketseller.com/events/?id=3212&event=dandelioncharm-freeevent'
 image: '../assets/images/0307-dandelion-charm.jpg'
 category: music
 featured: false
