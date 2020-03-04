@@ -4,7 +4,7 @@ title: PPH Community Choir
 description: 'Runs every Monday (7pm – 8.30pm) & Friday (10.30am – 12pm). £6 per session.'
 category: nights
 seo_description: 'Come along and sing with our friendly community choir! Everyone welcome – no audition required. Led by experienced singing teacher Viv Berry.'
-nav-menu: true
+nav-menu: false
 ---
 
 <!-- Main -->

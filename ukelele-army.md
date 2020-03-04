@@ -4,7 +4,7 @@ title: Ukelele Army
 description: 'The Printers Ukulele Army meets every Tuesday night at 8 pm and tuition is given if needed, and even instruments are available!'
 category: nights
 seo_description: 'The Printers Ukulele Army meets every Tuesday night at 8 pm and tuition is given if needed, and even instruments are available!'
-nav-menu: true
+nav-menu: false
 ---
 
 <!-- Main -->

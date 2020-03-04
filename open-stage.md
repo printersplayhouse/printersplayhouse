@@ -4,7 +4,7 @@ title: Open Stage Night
 description: 'The best open mic in Eastbourne. Every Wednesday. Free entry and first act from 8pm. Doors open 5pm.'
 category: nights
 seo_description: 'The best open mic in Eastbourne. Every Wednesday. Free entry and first act from 8pm. Doors open 5pm.'
-nav-menu: true
+nav-menu: false
 ---
 
 <!-- Main -->
