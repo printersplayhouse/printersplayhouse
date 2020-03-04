@@ -20,15 +20,26 @@
   </article>
   {% endif %}
   {% endfor %}
-  {% for page in site.html_pages %}
-  {% if site.tiles-source == 'pages' and page.archived != false %}
+</section>
+
+{% if site.categories.theatre %}
+<div class="innersmall">
+  <h2>Theatre at Printers</h2>
+</div>
+{% endif %}
+
+<section id="two" class="tiles">
+  {% for post in site.categories.theatre reversed limit:site.tiles-count %}
+  {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% if date > now and site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
-      <img src="{{ page.image }}" alt="{{ page.image-alt }}" />
+      <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
     </span>
-    <header class="major">
-      <h3><a href="{{ page.url | relative_url  }}" class="link">{{ page.title }}</a></h3>
-      <p>{{ page.description }}</p>
+    <header>
+      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
+      <p>{{ post.date | date_to_long_string: "ordinal" }}</p>
     </header>
   </article>
   {% endif %}

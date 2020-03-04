@@ -40,11 +40,21 @@ nav-menu: false
 			<div class="content">
 				<div class="inner">
 					<header class="major">
-						<h3>Viv Berry – Associate Director</h3>
+						<h3>Viv Berry – Director</h3>
 					</header>
 					<p><strong>Having trained as an actor Viv graduated with a First Class Musical Theatre & Acting degree from Mountview Academy. Viv has worked professionally as a performer for several years for companies such as Theatre Centre and The Coventry Belgrade Theatre.</strong></p>
 					<p>Viv became Artistic Director of Croydon Youth Theatre Organisation in 2003 and since then has directed numerous productions, commissioned new works and established and run all sorts of workshops for all sorts of people! She has been involved in National events at Theatre Festivals and created pieces of work that have won national acclaim: SHANK a play on knife crime at Tate Britain and RUBBISH PIRATES in Irelands Spraoi Festival.</p>
 					<p>Viv has also been Artistic Director at the Chicken Shed satellite company, Shed@ The Park, is a session singer and privately coaches voice, singing and accents.</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div style="background:url('../assets/images/team--Chris.jpg'); background-size:cover; width:100%; min-height: 400px;"></div>
+			<div class="content">
+				<div class="inner">
+					<header class="major">
+						<h3>Chris Berry – Director</h3>
+					</header>
 				</div>
 			</div>
 		</section>
