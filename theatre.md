@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Theatre at Printers
+title: Theatre
 description: 'Theatre at Printers Playhouse'
 category: nights
 seo_description: 'We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups.'
