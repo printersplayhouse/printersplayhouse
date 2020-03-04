@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Theatre
+title: Theatre at Printers
 description: 'Theatre at Printers Playhouse'
 category: nights
 seo_description: 'We aim to bring you new and exciting drama from our inhouse Printers Playhouse theatre company, visiting theatre companies, and our Community and Youth Theatre groups.'
@@ -42,7 +42,7 @@ nav-menu: true
 <!-- About -->	
 {% if site.categories.theatre %}
 <div class="innersmall">
-	<h2 style="text-transform: capitalize;">Upcoming Shows</h2>
+	<h2 style="text-transform: capitalize;">What's on in the Playhouse?</h2>
 </div>
 {% endif %}
 <section id="two" class="tiles">
