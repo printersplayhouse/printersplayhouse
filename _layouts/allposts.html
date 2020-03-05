@@ -35,11 +35,10 @@
           <div class="element-item {{ post.category }} box" style="width: 100%; left: 0px; top: 0px;">
             <span class="image left" style="height:100%; max-width: 35%"><img src="{{ post.image }}"/></span>
             <header class="right">
-              <h2 style="text-decoration: capitalize;">
+              <h2 style="text-decoration: capitalize; margin-bottom: 0;">
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h2>
-              <h4 style="margin-bottom: 0;">{{ post.date | date: "%a" }}</h4>
-              <h4>{{ post.date | date: "%R, %b %-d, %Y" }}<br />{{ post.price }}</h4>
+              <h4>{{ post.date | date: "%A, %R, %b %-d, %Y" }}<br />{{ post.price }}</h4>
               <p>{{ post.excerpt }}</p>
               {% if post.ticketlink %}
               <ul class="actions">
