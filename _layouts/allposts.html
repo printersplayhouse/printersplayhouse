@@ -38,7 +38,7 @@
               <h2 style="text-decoration: capitalize; margin-bottom: 0;">
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h2>
-              <h4>{{ post.date | date: "%A, %R, %b %-d, %Y" }}<br />{{ post.price }}</h4>
+              <h4>{{ post.date | date: "%A %R, %b %-d %Y" }}<br />{{ post.price }}</h4>
               <p>{{ post.excerpt }}</p>
               {% if post.ticketlink %}
               <ul class="actions">
