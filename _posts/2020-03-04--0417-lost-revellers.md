@@ -2,7 +2,7 @@
 layout: post
 title: The Lost Revellers
 description: Folk-fusion band Lost Revellers play original compositions and creative arrangements of world folk and jazz tunes
-price: FREE
+price: £6
 ticketlink: 'https://onlineticketseller.com/events/?id=3026&event=lostrevellersinconcert'
 image: '../assets/images/0417-lost-revellers.jpg'
 category: music
