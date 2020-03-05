@@ -5,7 +5,7 @@
 {% endif %}
 
 <section id="one" class="tiles">
-  {% for post in site.categories.music reversed limit:site.tiles-count %}
+  {% for post in site.categories.music limit:site.tiles-count %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if date > now and site.tiles-source == 'posts' and post.archived != true %}
@@ -29,7 +29,7 @@
 {% endif %}
 
 <section id="two" class="tiles">
-  {% for post in site.categories.theatre reversed limit:site.tiles-count %}
+  {% for post in site.categories.theatre  limit:site.tiles-count %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if date > now and site.tiles-source == 'posts' and post.archived != true %}
