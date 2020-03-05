@@ -8,7 +8,7 @@ image: '../assets/images/0404-creature-creature.jpg'
 category: music
 featured: false
 archived: false
-date: 2020-04-03 21:00:00
+date: 2020-04-04 21:00:00
 venue: Printers Playhouse, 44 Grove Road, Eastbourne
 ---
 
