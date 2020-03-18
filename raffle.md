@@ -17,7 +17,6 @@ nav-menu: false
 		<p>We have always been overwhelmed by the kindness and support of our friends, artists, colleagues and  customers and we know that those who can, will want to continue supporting us through the coming months. </p>
     	<p><strong>Ideally we would have liked to set up a virtual PPH bar… but unfortunately virtual beer isn’t as delicious as ours.</strong></p>
     	<p>So instead we are asking you to please make a small donation to PPH, perhaps for the amount of a beer or two? In return, for every £2 donated, we will enter you into a prize draw for a number of wonderful artistic gifts! Names will be drawn at random at the end of April.</p>
-    	<p>So instead we are asking you to please make a small donation to PPH, perhaps for the amount of a beer or two? In return, for every £2 donated, we will enter you into a prize draw for a number of wonderful artistic gifts! Names will be drawn at random at the end of April.</p>
     	<p>Prizes include original art work from fantastic local and international artists, Michaele Wynn-Jones, artist Mark Curryer Graham Dean, a course of 5 x 30 mins piano lessons, 1to1 singing lesson, 1to1 acting lesson, a PPH voucher towards any of our courses or groups and a massive booze bucket full of your favourite beers wines and spirits. So please do donate of you can.</p>
     	<div class="box">
     		<h3>To Enter</h3>
