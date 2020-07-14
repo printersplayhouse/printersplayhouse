@@ -1,23 +1,25 @@
-<!-- Airtable Content -->
-<div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
-{% for record in site.data.events.records %}
+<div class="innersmall">
+  <h2>Coming Soon to PPH</h2>
+</div>
+
+<section id="one" class="tiles">
+  {% for record in site.data.events.records %}
   {% if record.fields.publish == true and record.fields.feature == true | sort: record.fields.date %}
-  <div class="element-item {{ record.fields.category }} box" style="width: 100%; left: 0px; top: 0px; height: auto;">
-    <div class="row">
-      <span class="image 4u 12u$(small)" style="height:100%; max-width: 35%; display: block; margin-bottom: 0;"><img src="{{ record.fields.image[0].url }}"/></span>
-      <div class="right 8u 12u$(small)">
-        <h2 style="text-decoration: capitalize; margin-bottom: 0;">
-          {{ record.fields.title }}
-        </h2>
-        <h4>{{ record.fields.date | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</h4>
-        <p><strong>{{ record.fields.excerpt }}</strong></p>
-        <p>{{ record.fields.content }}</p>
-        <ul class="actions">
-          {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
-          {% if record.fields.weblink %}<li><a href="{{ record.fields.weblink }}" class="button scrolly special">Take Part</a></li>{% endif %}
-        </ul>
-      </div>
-    </div>
-   </div>
+  <article>
+    <span class="image">
+      <img src="{{ record.fields.image[0].url }}" />
+    </span>
+    <header>
+      <h3>{{ record.fields.title }}</h3>
+      <p>{{ record.fields.date | date: "%R %A %-d %b %Y" }}</p>
+    </header>
+  </article>
   {% endif %}
-{% endfor %}
+  {% endfor %}
+</section>
+
+<div class="innersmall">
+  <ul class="actions">
+    <li><a href="{{ '/events' | absolute_url }}" class="button scrolly special">View all events</a></li>
+  </ul>
+</div>
