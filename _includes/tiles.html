@@ -1,47 +1,23 @@
-{% if site.categories.music %}
-<div class="innersmall">
-  <h2>Music Picks</h2>
-</div>
-{% endif %}
-
-<section id="one" class="tiles">
-  {% for post in site.categories.music limit:site.tiles-count %}
-  {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-  {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
-  {% if date > now and site.tiles-source == 'posts' and post.archived != true %}
-  <article>
-    <span class="image">
-      <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
-    </span>
-    <header>
-      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <p>{{ post.date | date_to_long_string: "ordinal" }}</p>
-    </header>
-  </article>
+<!-- Airtable Content -->
+<div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
+{% for record in site.data.events.records %}
+  {% if record.fields.publish == true and record.fields.feature == true | sort: record.fields.date %}
+  <div class="element-item {{ record.fields.category }} box" style="width: 100%; left: 0px; top: 0px; height: auto;">
+    <div class="row">
+      <span class="image 4u 12u$(small)" style="height:100%; max-width: 35%; display: block; margin-bottom: 0;"><img src="{{ record.fields.image[0].url }}"/></span>
+      <div class="right 8u 12u$(small)">
+        <h2 style="text-decoration: capitalize; margin-bottom: 0;">
+          {{ record.fields.title }}
+        </h2>
+        <h4>{{ record.fields.date | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</h4>
+        <p><strong>{{ record.fields.excerpt }}</strong></p>
+        <p>{{ record.fields.content }}</p>
+        <ul class="actions">
+          {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
+          {% if record.fields.weblink %}<li><a href="{{ record.fields.weblink }}" class="button scrolly special">Take Part</a></li>{% endif %}
+        </ul>
+      </div>
+    </div>
+   </div>
   {% endif %}
-  {% endfor %}
-</section>
-
-{% if site.categories.theatre %}
-<div class="innersmall">
-  <h2 style="text-transform: capitalize;">What's on in the Playhouse?</h2>
-</div>
-{% endif %}
-
-<section id="two" class="tiles">
-  {% for post in site.categories.theatre  limit:site.tiles-count %}
-  {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-  {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
-  {% if date > now and site.tiles-source == 'posts' and post.archived != true %}
-  <article>
-    <span class="image">
-      <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
-    </span>
-    <header>
-      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <p>{{ post.date | date_to_long_string: "ordinal" }}</p>
-    </header>
-  </article>
-  {% endif %}
-  {% endfor %}
-</section>
+{% endfor %}
