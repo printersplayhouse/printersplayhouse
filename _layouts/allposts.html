@@ -16,32 +16,60 @@
     <!-- Main -->
     <div id="main" class="alt">
       <div class="inner">
-        <h1 style="margin-bottom:0;">What's On</h1>
-        <!-- <p>Our carefully curated programme is designed to bring you exciting new theatre, laugh-out-loud comedy and a diverse range of live music acts.</p> -->
         <section style="background: #53B3CB;">
-          <div class="inner" style="padding: 2em">
+          <div class="inner" style="padding: 2em; margin-bottom: 1em;">
               <div class="row" >
                   <div class="12u 12u$(small)">
-                      <h2 style="margin-bottom: 0; color:#fff;">Coronavirus Update 21/03/2020</h2>
-                      <p>As it’s still not safe for us to open our doors we have another month of exciting things you can get involved with in our ‘in in’ nights out!</p>
+                      <h2 style="margin-bottom: 0; color:#fff;">Coronavirus Update</h2>
+                      <p style="margin-bottom: 0;">As it’s still not safe for us to open our doors we have another month of exciting things you can get involved with in our ‘in in’ nights out!</p>
                   </div>
               </div>
           </div>
         </section>
 
-        <h3 style="display: inline-block; width: auto; margin: 0 1em 0 0">Filters</h3>
-        <div class="button-group filter-button-group">
-          <a class="button active" data-filter="*">All</a>
-          {% for category in site.categories %}
-            <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
-          {% endfor %}
-        </div> 
+        <h1 style="margin-bottom:0;">What's On</h1>
+        <p>Our carefully curated programme is designed to bring you exciting new theatre, laugh-out-loud comedy and a diverse range of live music acts.</p>
+
+        <section style="display: inline-block; width: auto; margin-bottom: 2em;">
+          <h3 style="margin-bottom: 0;">Filters</h3>
+          <div class="button-group filter-button-group">
+            <a class="button active" data-filter="*">All</a>
+            <a class="button" data-filter=".music">Music</a>
+            <a class="button" data-filter=".theatre">Theatre</a>
+            <a class="button" data-filter=".virtual-fun">Virtual Fun</a>
+            <!-- {% for category in site.categories %}
+              <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
+            {% endfor %} -->
+          </div> 
+        </section>
 
         
 
-    <!-- post content here -->
+    <!-- Airtable Content -->
         <div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
-        {% for post in site.posts reversed %}
+        {% for record in site.data.events.records %}
+          {% if record.fields.publish == true | sort: record.fields.date %}
+          <div class="element-item {{ record.fields.category }} box" style="width: 100%; left: 0px; top: 0px; height: auto;">
+            <div class="row">
+              <span class="image 4u 12u$(small)" style="height:100%; max-width: 35%; display: block; margin-bottom: 0;"><img src="{{ record.fields.image[0].url }}"/></span>
+              <div class="right 8u 12u$(small)">
+                <h2 style="text-decoration: capitalize; margin-bottom: 0;">
+                  {{ record.fields.title }}
+                </h2>
+                <h4>{{ record.fields.date | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</h4>
+                <p><strong>{{ record.fields.excerpt }}</strong></p>
+                <p>{{ record.fields.content }}</p>
+                <ul class="actions">
+                  {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
+                  {% if record.fields.weblink %}<li><a href="{{ record.fields.weblink }}" class="button scrolly special">Take Part</a></li>{% endif %}
+                </ul>
+              </div>
+            </div>
+           </div>
+          {% endif %}
+        {% endfor %}
+
+        <!-- {% for post in site.posts reversed %}
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{post.date | date: '%s' | plus: 0 %}}{% endcapture %}
         {% if date >= now %}
@@ -61,7 +89,7 @@
             </header>
            </div>
         {% endif %}
-        {% endfor %}
+        {% endfor %} -->
         </div>
       </div>
 
