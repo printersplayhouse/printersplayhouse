@@ -37,6 +37,9 @@ nav-menu: true
     <p>Every third Friday of every other month!</p>
     <p>We are already building a great network of artists and musicians locally and nationally, but are always on the lookout for new talent to showcase; either downstairs or in joint promotions upstairs in the theatre. Let us know about you by emailing chris@printersplayhouse.co.uk – and it could be the beginning of a glittering career, or at least a lovely gig at Printers Playhouse!</p>
   </div>
+  <div class="box">
+    <p>Due to our COVID measures bookings can be made by contacting: info@printersplayhouse.co.uk  as all events and workshops are in pre-booked ‘bubbles’ for the safety of audience, participants and staff team alike.</p>
+  </div>
 </section>
 
 <!-- About -->	

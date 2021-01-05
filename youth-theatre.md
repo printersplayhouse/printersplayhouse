@@ -18,7 +18,6 @@ nav-menu: false
 		<h1>{{ page.title }}</h1>
     <h4>{{ page.description }}</h4>
 		<p>Within weekly workshops on Wednesdays in term time, our youth groups work on new scripts, existing work, and even devise their own pieces – not to be missed!</p>
-    <p>We are already building a great network of artists and musicians locally and nationally, but are always on the lookout for new talent to showcase; either downstairs or in joint promotions upstairs in the theatre. Let us know about you by emailing <a href="mailto:chris@printersplayhouse.co.uk">chris@printersplayhouse.co.uk</a> – and it could be the beginning of a glittering career, or at least a lovely gig at Printers Playhouse!</p>
 	</div>
   <div class="row 100% uniform">
     <div class="4u 12u$(medium)">
