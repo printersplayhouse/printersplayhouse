@@ -35,13 +35,13 @@ nav-menu: true
 </section>
 
 <!-- About -->	
-{% if site.categories.music %}
+{% if site.categories.workshops %}
 <div class="innersmall">
 	<h2 style="text-transform: capitalize;">Upcoming Shows</h2>
 </div>
 {% endif %}
 <section id="two" class="tiles">
-  {% for post in site.categories.music reversed %}
+  {% for post in site.categories.workshops reversed %}
   {% if site.tiles-source == 'posts' and post.archived != true %}
   <article>
     <span class="image">
