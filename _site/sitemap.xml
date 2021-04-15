@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/singo/</loc>
-<lastmod>2020-06-08T19:30:00+01:00</lastmod>
+<loc>http://localhost:4000/stacey-and-john/</loc>
+<lastmod>2020-10-03T19:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/singo/</loc>
-<lastmod>2020-06-12T19:30:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/music-quiz/</loc>
-<lastmod>2020-06-19T19:30:00+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/2020-06-05-sing-along-party/</loc>
-<lastmod>2020-07-15T06:59:29+01:00</lastmod>
+<loc>http://localhost:4000/rick-bonner/</loc>
+<lastmod>2020-10-17T19:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/archive/2020-02-29--0318-open-stage/</loc>
@@ -186,6 +178,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/ukelele-army/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/workshops/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/youth-theatre/</loc>
