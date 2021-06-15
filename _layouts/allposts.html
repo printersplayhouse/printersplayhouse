@@ -25,11 +25,12 @@
           <div class="button-group filter-button-group">
             <a class="button active" data-filter="*">All</a>
             <a id="community" class="button" data-filter=".community">Community (<span id="countCommunity">0</span>)</a>
+            <a id="event" class="button" data-filter=".event">Film (<span id="countEvent">0</span>)</a>
+            <a id="film" class="button" data-filter=".film">Film (<span id="countFilm">0</span>)</a>
             <a id="music" class="button" data-filter=".music">Music (<span id="countMusic">0</span>)</a>
             <a id="theatre" class="button" data-filter=".theatre">Theatre (<span id="countTheatre">0</span>)</a>
             <a id="lessons" class="button" data-filter=".lessons">Lessons (<span id="countLessons">0</span>)</a>
             <a id="spoken" class="button" data-filter=".spoken-word">Spoken Word (<span id="countSpoken">0</span>)</a>
-            <a id="film" class="button" data-filter=".film-fun">Film (<span id="countFilm">0</span>)</a>
             <a id="workshops" class="button" data-filter=".workshops">Workshops (<span id="countWorkshops">0</span>)</a>
           </div> 
         </section>
@@ -41,7 +42,7 @@
         {% assign sortedRecords = site.data.events.records | sort: 'fields.date' %}
         {% for record in sortedRecords %}
           {% if record.fields.publish == true | sort: record.fields.date %}
-          <div class="element-item {{ record.fields.category }} box" style="width: 100%; left: 0px; top: 0px; height: auto;">
+          <div class="element-item {{ record.fields.category | lowercase }} box" style="width: 100%; left: 0px; top: 0px; height: auto;">
             <div class="row">
               <span class="image 4u 12u$(small)" style="height:100%; max-width: 35%; display: block; margin-bottom: 0;"><img src="{{ record.fields.image[0].url }}"/></span>
               <div class="right 8u 12u$(small)">
@@ -129,6 +130,15 @@
   } else {
   document.getElementById('countFilm').innerHTML = countFilm;
   console.log(countFilm);
+  }
+
+  var countEvent = document.getElementsByClassName('event').length;
+  if (countEvent === 0) {
+  document.getElementById('event').style.display = 'none';
+  console.log('hide countEvent');
+  } else {
+  document.getElementById('countEvent').innerHTML = countEvent;
+  console.log(countEvent);
   }
   }
 
