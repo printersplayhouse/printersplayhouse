@@ -40,18 +40,24 @@ nav-menu: true
 	<h2 style="text-transform: capitalize;">Upcoming Shows</h2>
 </div>
 {% endif %}
-<section id="two" class="tiles">
-  {% for post in site.categories.workshops reversed %}
-  {% if site.tiles-source == 'posts' and post.archived != true %}
+<section id="one" class="tiles">
+  {% for record in site.data.events.records %}
+  {% if record.fields.publish == true and record.fields.feature == true and record.fields.category == 'workshops' | sort: record.fields.date %}
   <article>
     <span class="image">
-      <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
+      <img src="{{ record.fields.image[0].url }}" />
     </span>
     <header>
-      <h3><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h3>
-      <h4>{{ post.date | date: "%a, %b %d, %y" }}</h4>
+      <h3>{{ record.fields.title }}</h3>
+      <p>{{ record.fields.date | date: "%R %A %-d %b %Y" }}</p>
     </header>
   </article>
   {% endif %}
   {% endfor %}
 </section>
+
+<div class="innersmall">
+  <ul class="actions">
+    <li><a href="{{ '/events' | absolute_url }}" class="button scrolly special">View all events</a></li>
+  </ul>
+</div>
