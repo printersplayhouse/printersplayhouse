@@ -29,7 +29,7 @@
             <a id="theatre" class="button" data-filter=".theatre">Theatre (<span id="countTheatre">0</span>)</a>
             <a id="lessons" class="button" data-filter=".lessons">Lessons (<span id="countLessons">0</span>)</a>
             <a id="spoken" class="button" data-filter=".spoken-word">Spoken Word (<span id="countSpoken">0</span>)</a>
-            <a id="virtual" class="button" data-filter=".virtual-fun">Virtual Fun (<span id="countVirtual">0</span>)</a>
+            <a id="film" class="button" data-filter=".film-fun">Film (<span id="countFilm">0</span>)</a>
             <a id="workshops" class="button" data-filter=".workshops">Workshops (<span id="countWorkshops">0</span>)</a>
           </div> 
         </section>
@@ -122,13 +122,13 @@
   console.log(countTheatre);
   }
 
-  var countVirtual = document.getElementsByClassName('virtual').length;
-  if (countVirtual === 0) {
-  document.getElementById('virtual').style.display = 'none';
-  console.log('hide countVirtual');
+  var countFilm = document.getElementsByClassName('film').length;
+  if (countFilm === 0) {
+  document.getElementById('film').style.display = 'none';
+  console.log('hide countFilm');
   } else {
-  document.getElementById('countVirtual').innerHTML = countVirtual;
-  console.log(countVirtual);
+  document.getElementById('countFilm').innerHTML = countFilm;
+  console.log(countFilm);
   }
   }
 
