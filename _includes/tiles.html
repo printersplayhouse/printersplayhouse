@@ -3,8 +3,10 @@
 </div>
 
 <section id="one" class="tiles">
+  {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% for record in site.data.events.records %}
-  {% if record.fields.publish == true and record.fields.feature == true | sort: record.fields.date %}
+  {% if record.fields.publish == true and record.fields.feature == true and date >= now | sort: record.fields.date %}
   <article>
     <span class="image">
       <img src="{{ record.fields.image[0].url }}" />
