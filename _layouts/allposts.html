@@ -11,7 +11,36 @@
   <body>
 
     {% include header.html %} 
-  
+    
+      <section id="banner" class="style2">
+        {% assign sortedFeature = site.data.events.records | where: "fields.feature","true" | sort: 'fields.date' %}
+        {% for record in sortedFeature limit:2%}
+        {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+        {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
+        {% if record.fields.publish == true and date >= now %}
+          <div class="inner">
+              <span class="image">
+                  <img src="{{ record.fields.image[0].url }}" alt="">
+              </span>
+              <header class="major">
+
+                  <h3>Next up at PPH:</h3>
+                  <h1 style="margin-bottom: 0em;">{{ record.fields.title }}</h1>
+                  <h2>{{ record.fields.date | date: "%R %A %-d %b %Y" }}</h2>
+
+              </header>
+              <div>
+                <h4>{{ record.fields.excerpt }}</h4>
+                <p>{{ record.fields.content }}</p>
+                <ul class="actions">
+                  {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
+                  {% if record.fields.streamlink %}<li><a href="{{ record.fields.streamlink }}" class="button scrolly special">Watch Stream</a></li>{% endif %}
+                </ul>
+              </div>
+          </div>
+        {% endif %}
+        {% endfor %}
+      </section>
     
     <!-- Main -->
     <div id="main" class="alt">
@@ -39,7 +68,7 @@
 
     <!-- Airtable Content -->
         <div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
-        {% assign sortedRecords = site.data.events.records | where: "fields.feature","true" | sort: 'fields.date' %}
+        {% assign sortedRecords = site.data.events.records | sort: 'fields.date' %}
         {% for record in sortedRecords %}
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
