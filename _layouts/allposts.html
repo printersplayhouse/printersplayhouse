@@ -32,6 +32,7 @@
               <div>
                 <h4>{{ record.fields.excerpt }}</h4>
                 <p>{{ record.fields.content }}</p>
+                <p>Book by emailing us at: <a href="mailto:info@printersplayhouse.co.uk">info@printersplayhouse.co.uk</a></p>
                 <ul class="actions">
                   {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
                   {% if record.fields.streamlink %}<li><a href="{{ record.fields.streamlink }}" class="button scrolly special">Watch Stream</a></li>{% endif %}
