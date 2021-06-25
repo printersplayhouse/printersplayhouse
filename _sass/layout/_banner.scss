@@ -18,13 +18,11 @@
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
-		padding-top: 4em;
-		margin-bottom: -3.25em;
-		max-height: 32em;
+		height: 800vh;
+		padding: 4em;
+		max-height: 50em;
 		min-height: 22em;
 		position: relative;
-		top: -3.25em;
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');

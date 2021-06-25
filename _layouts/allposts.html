@@ -12,6 +12,36 @@
 
     {% include header.html %} 
     
+      <section id="banner" class="style2">
+        {% assign sorted-records = site.data.events.records | where: "feature","true" | sort: 'date' %}
+        {% for record in sorted-records limit:1 %}
+        {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+        {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
+        {% if record.fields.publish == true and date >= now %}
+          <div class="inner">
+              <span class="image">
+                  <img src="{{ record.fields.image[0].url }}" alt="">
+              </span>
+              <header class="major">
+
+                  <h3>Coming soon to PPH:</h3>
+                  <h1 style="margin-bottom: 0.5em;">{{ record.fields.title }}</h1>
+                  <h2>{{ record.fields.date | date: "%R %A %-d %b %Y" }}</h2>
+
+              </header>
+              <div>
+                <h4><span style="text-transform: capitalize;">{{ record.fields.category | Titlecase }}</span></h4>
+                <p><strong>{{ record.fields.excerpt }}</strong></p>
+                <p>{{ record.fields.content }}</p>
+                <ul class="actions">
+                  {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
+                  {% if record.fields.streamlink %}<li><a href="{{ record.fields.streamlink }}" class="button scrolly special">Watch Stream</a></li>{% endif %}
+                </ul>
+              </div>
+          </div>
+        {% endif %}
+        {% endfor %}
+      </section>
     
     <!-- Main -->
     <div id="main" class="alt">
@@ -54,6 +84,7 @@
                 <h4><span style="text-transform: capitalize;">{{ record.fields.category | Titlecase }}</span><br />{{ record.fields.date | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</h4>
                 <p><strong>{{ record.fields.excerpt }}</strong></p>
                 <p>{{ record.fields.content }}</p>
+                <p>Book by emailing us at: <a href="mailto:info@printersplayhouse.co.uk">info@printersplayhouse.co.uk</a></p>
                 <ul class="actions">
                   {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
                   {% if record.fields.streamlink %}<li><a href="{{ record.fields.streamlink }}" class="button scrolly special">Watch Stream</a></li>{% endif %}
