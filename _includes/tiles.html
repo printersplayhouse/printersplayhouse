@@ -4,7 +4,7 @@
 
 <section id="one" class="tiles">
   {% assign sortedFeature = site.data.events.records | where: "fields.feature","true" | sort: 'fields.date' %}
-  {% for record in sortedFeature limit:7%}
+  {% for record in sortedFeature limit:3 offset:2 %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if record.fields.publish == true and record.fields.feature == true and date >= now | sort: record.fields.date | reverse %}

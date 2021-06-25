@@ -41,8 +41,9 @@ nav-menu: true
 </div>
 {% endif %}
 <section id="one" class="tiles">
-  {% for record in site.data.events.records %}
-  {% if record.fields.publish == true and record.fields.feature == true and record.fields.category == 'workshops' | sort: record.fields.date %}
+  {% assign sortedRecords = site.data.events.records | where: "fields.category","workshops" | sort: 'fields.date' %}
+  {% for record in sortedRecords %}
+  {% if record.fields.publish == true and record.fields.feature == true %}
   <article>
     <span class="image">
       <img src="{{ record.fields.image[0].url }}" />
