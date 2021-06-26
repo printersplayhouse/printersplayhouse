@@ -1,10 +1,6 @@
-<div class="innersmall">
-  <h1>Coming Soon to PPH</h1>
-</div>
-
 <section id="one" class="tiles">
   {% assign sortedFeature = site.data.events.records | where: "fields.feature","true" | sort: 'fields.date' %}
-  {% for record in sortedFeature limit:3 offset:2 %}
+  {% for record in sortedFeature limit:2 offset:2 %}
   {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
   {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if record.fields.publish == true and record.fields.feature == true and date >= now | sort: record.fields.date | reverse %}
@@ -13,8 +9,10 @@
       <img src="{{ record.fields.image[0].url }}" />
     </span>
     <header>
-      <h3>{{ record.fields.title }}</h3>
-      <p>{{ record.fields.date | date: "%R %A %-d %b %Y" }}</p>
+      <h2 style="text-decoration: capitalize; margin-bottom: 0;">
+        {{ record.fields.title }}
+      </h2>
+      <h4>{{ record.fields.date | date: "%R %A %-d %b %Y" }}, <span style="text-transform: capitalize;">{{ record.fields.category | Titlecase }}</span></h4>
     </header>
   </article>
   {% endif %}
