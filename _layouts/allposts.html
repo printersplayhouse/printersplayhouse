@@ -11,37 +11,7 @@
   <body>
 
     {% include header.html %} 
-    
-      <section id="banner" class="style2">
-        {% assign sortedFeature = site.data.events.records | where: "fields.feature","true" | sort: 'fields.date' %}
-        {% for record in sortedFeature limit:2%}
-        {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-        {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
-        {% if record.fields.publish == true and date >= now %}
-          <div class="inner">
-              <span class="image">
-                  <img src="{{ record.fields.image[0].url }}" alt="">
-              </span>
-              <header class="major">
-
-                  <h3>Next up at PPH:</h3>
-                  <h1 style="margin-bottom: 0em;">{{ record.fields.title }}</h1>
-                  <h2>{{ record.fields.date | date: "%R %A %-d %b %Y" }}</h2>
-
-              </header>
-              <div>
-                <p>{{ record.fields.content }}</p>
-                <h4>{{ record.fields.excerpt }}</h4>
-                <p>To make a booking or to contact us, please email <a href="mailto:info@printersplayhouse.co.uk">info@printersplayhouse.co.uk</a>.</p>
-                <ul class="actions">
-                  {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
-                  {% if record.fields.streamlink %}<li><a href="{{ record.fields.streamlink }}" class="button scrolly special">Watch Stream</a></li>{% endif %}
-                </ul>
-              </div>
-          </div>
-        {% endif %}
-        {% endfor %}
-      </section>
+  
     
     <!-- Main -->
     <div id="main" class="alt">
@@ -74,20 +44,18 @@
         {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
           {% if record.fields.publish == true and date >= now | sort: record.fields.date %}
-          <div class="element-item {{ record.fields.category | lowercase }} box" style="width: 100%; left: 0px; top: 0px; height: auto;">
+          <div class="element-item {{ record.fields.category | lowercase }} box">
             <div class="row">
               <span class="image 4u 12u$(small)" style="height:100%; max-width: 35%; display: block; margin-bottom: 0;"><img src="{{ record.fields.image[0].url }}"/></span>
               <div class="right 8u 12u$(small)">
-                <h2 style="text-decoration: capitalize; margin-bottom: 0;">
+                <h1 style="text-decoration: capitalize; margin-bottom: 0;">
                   {{ record.fields.title }}
-                </h2>
-                <h4><span style="text-transform: capitalize;">{{ record.fields.category | Titlecase }}</span><br />{{ record.fields.date | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</h4>
-                <p>{{ record.fields.content }}</p>
+                </h1>
+                <h3>{{ record.fields.date | date: "%R %A %-d %b %Y" }} // <span style="text-transform: capitalize;">{{ record.fields.category | Titlecase }}</span></h3>
                 <h4>{{ record.fields.excerpt }}</h4>
                 <p>Book by emailing us at: <a href="mailto:info@printersplayhouse.co.uk">info@printersplayhouse.co.uk</a></p>
                 <ul class="actions">
-                  {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
-                  {% if record.fields.streamlink %}<li><a href="{{ record.fields.streamlink }}" class="button scrolly special">Watch Stream</a></li>{% endif %}
+                  <li><a href="#myModal{{ forloop.index }}" class="modal-button button special">View Details</a></li>
                 </ul>
               </div>
             </div>
@@ -96,6 +64,108 @@
         {% endfor %}
         </div>
       </div>
+
+      {% assign sortedModals = site.data.events.records | sort: 'fields.date' %}
+      {% for record in sortedModals %}
+      <!-- The Modal -->
+      <div id="myModal{{ forloop.index }}" class="modal">
+        <div class="row modal-content">
+          <div class="12u"><button class="button close back special" style="margin-bottom: 2em;">Back to all {{ page.title }}</button></div>
+          <span class="image 4u 12u$(small)"><img src="{{ record.fields.image[0].url }}"/></span>
+          <div class="right 8u 12u$(small)">
+            <h1 style="text-decoration: capitalize; margin-bottom: 0;">
+              {{ record.fields.title }}
+            </h1>
+            <h3>{{ record.fields.date | date: "%R %A %-d %b %Y" }} // <span style="text-transform: capitalize;">{{ record.fields.category | Titlecase }}</span></h3>
+            <p>{{ record.fields.content }}</p>
+            <h4>{{ record.fields.excerpt }}</h4>
+            <p>Book by emailing us at: <a href="mailto:info@printersplayhouse.co.uk">info@printersplayhouse.co.uk</a></p>
+            <ul class="actions">
+              {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
+              {% if record.fields.streamlink %}<li><a href="{{ record.fields.streamlink }}" class="button scrolly special">Watch Stream</a></li>{% endif %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+
+<script type="text/javascript"> 
+// Get the button that opens the modal
+var btn = document.querySelectorAll("a.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+</script>
+
+
+<script type="text/javascript"> 
+// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+</script>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>

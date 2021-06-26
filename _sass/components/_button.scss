@@ -77,6 +77,53 @@
 			line-height: 3em;
 		}
 
+		&.back {
+			padding-left: 6em;
+			position: relative;
+
+			&:before, &:after {
+				@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
+				background-position: center left;
+				background-repeat: no-repeat;
+				background-size: 36px 24px;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				left: 1.5em;
+				top: 0;
+				vertical-align: middle;
+				width: 36px;
+			}
+
+			&:before {
+				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+				-webkit-transform: rotate(180deg);
+			    -moz-transform: rotate(180deg);
+			    -ms-transform: rotate(180deg);
+			    -o-transform: rotate(180deg);
+			    transform: rotate(180deg);
+			}
+
+			&:after {
+				background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+				opacity: 0;
+				z-index: 1;
+				-webkit-transform: rotate(180deg);
+			    -moz-transform: rotate(180deg);
+			    -ms-transform: rotate(180deg);
+			    -o-transform: rotate(180deg);
+			    transform: rotate(180deg);
+			}
+
+			&:hover, &:active {
+				&:after {
+					opacity: 1;
+				}
+			}
+
+		}
+
 		&.next {
 			padding-right: 4.5em;
 			position: relative;
