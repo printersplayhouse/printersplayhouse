@@ -55,6 +55,7 @@
                 <h4>{{ record.fields.excerpt }}</h4>
                 <ul class="actions">
                   <li><a href="#myModal{{ forloop.index }}" class="modal-button button special">View Details</a></li>
+                  {% if record.fields.ticketlink %}<li><a href="{{ record.fields.ticketlink }}" class="button scrolly special">Book Now</a></li>{% endif %}
                 </ul>
               </div>
             </div>
