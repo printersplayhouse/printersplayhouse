@@ -41,9 +41,9 @@
         <div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
         {% assign sortedRecords = site.data.events.records | sort: 'fields.date' %}
         {% for record in sortedRecords %}
-        {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+        {% capture datenow %}{{ site.time | date: '%s' | plus: 0 %}}{% endcapture %}
         {% capture date %}{{ record.fields.date | date: '%s' | plus: 0 %}}{% endcapture %}
-          {% if record.fields.publish == true and date >= now | sort: record.fields.date %}
+        {% if record.fields.publish == true and date >= datenow | sort: record.fields.date %}
           <div class="element-item {{ record.fields.category | lowercase }} box" id="{{ record.fields.date | date: "%d%m%y" }}">
             <div class="row">
               <span class="image 4u 12u$(small)" style="height:100%; max-width: 35%; display: block; margin-bottom: 0;"><img src="{{ record.fields.image[0].url }}"/></span>
